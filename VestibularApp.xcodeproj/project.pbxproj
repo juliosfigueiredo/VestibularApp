@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4328C88D246F1164007C6B69 /* VestibularApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VestibularApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4328C88D246F1164007C6B69 /* Seja Unip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seja Unip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4328C890246F1164007C6B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4328C892246F1164007C6B69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4328C894246F1164007C6B69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		4328C8A6246F116E007C6B69 /* VestibularAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VestibularAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4328C8AA246F116E007C6B69 /* VestibularAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestibularAppTests.swift; sourceTree = "<group>"; };
 		4328C8AC246F116E007C6B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D0110A246F1D8000D9B903 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D0110D246F1D8000D9B903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43D01107246F1D8000D9B903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +74,7 @@
 			children = (
 				4328C88F246F1164007C6B69 /* VestibularApp */,
 				4328C8A9246F116E007C6B69 /* VestibularAppTests */,
+				43D0110B246F1D8000D9B903 /* Domain */,
 				4328C88E246F1164007C6B69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,8 +82,9 @@
 		4328C88E246F1164007C6B69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4328C88D246F1164007C6B69 /* VestibularApp.app */,
+				4328C88D246F1164007C6B69 /* Seja Unip.app */,
 				4328C8A6246F116E007C6B69 /* VestibularAppTests.xctest */,
+				43D0110A246F1D8000D9B903 /* Domain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +113,25 @@
 			path = VestibularAppTests;
 			sourceTree = "<group>";
 		};
+		43D0110B246F1D8000D9B903 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				43D0110D246F1D8000D9B903 /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43D01105246F1D8000D9B903 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4328C88C246F1164007C6B69 /* VestibularApp */ = {
@@ -119,7 +148,7 @@
 			);
 			name = VestibularApp;
 			productName = VestibularApp;
-			productReference = 4328C88D246F1164007C6B69 /* VestibularApp.app */;
+			productReference = 4328C88D246F1164007C6B69 /* Seja Unip.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4328C8A5246F116E007C6B69 /* VestibularAppTests */ = {
@@ -140,6 +169,24 @@
 			productReference = 4328C8A6246F116E007C6B69 /* VestibularAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		43D01109246F1D8000D9B903 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D01111246F1D8000D9B903 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				43D01105246F1D8000D9B903 /* Headers */,
+				43D01106246F1D8000D9B903 /* Sources */,
+				43D01107246F1D8000D9B903 /* Frameworks */,
+				43D01108246F1D8000D9B903 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 43D0110A246F1D8000D9B903 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +203,9 @@
 					4328C8A5246F116E007C6B69 = {
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = 4328C88C246F1164007C6B69;
+					};
+					43D01109246F1D8000D9B903 = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
@@ -174,6 +224,7 @@
 			targets = (
 				4328C88C246F1164007C6B69 /* VestibularApp */,
 				4328C8A5246F116E007C6B69 /* VestibularAppTests */,
+				43D01109246F1D8000D9B903 /* Domain */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +241,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4328C8A4246F116E007C6B69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D01108246F1D8000D9B903 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,6 +273,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4328C8AB246F116E007C6B69 /* VestibularAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D01106246F1D8000D9B903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +439,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.VestibularApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Seja Unip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,7 +457,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.VestibularApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Seja Unip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +507,64 @@
 			};
 			name = Release;
 		};
+		43D0110F246F1D8000D9B903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8LH8763329;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43D01110246F1D8000D9B903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8LH8763329;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.julio.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,6 +591,15 @@
 			buildConfigurations = (
 				4328C8B3246F116E007C6B69 /* Debug */,
 				4328C8B4246F116E007C6B69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43D01111246F1D8000D9B903 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D0110F246F1D8000D9B903 /* Debug */,
+				43D01110246F1D8000D9B903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

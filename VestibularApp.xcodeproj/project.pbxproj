@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4303A9AC246F353F00BFE6AA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303A9AB246F353F00BFE6AA /* Model.swift */; };
+		4303A9AE246F35DE00BFE6AA /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303A9AD246F35DE00BFE6AA /* RemoteAddAccount.swift */; };
+		4303A9B0246F364A00BFE6AA /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303A9AF246F364A00BFE6AA /* HttpPostClient.swift */; };
 		4328C891246F1164007C6B69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C890246F1164007C6B69 /* AppDelegate.swift */; };
 		4328C893246F1164007C6B69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C892246F1164007C6B69 /* SceneDelegate.swift */; };
 		4328C895246F1164007C6B69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C894246F1164007C6B69 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		4303A9AB246F353F00BFE6AA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4303A9AD246F35DE00BFE6AA /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
+		4303A9AF246F364A00BFE6AA /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		4328C88D246F1164007C6B69 /* Seja Unip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seja Unip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4328C890246F1164007C6B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4328C892246F1164007C6B69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 		43D0111C246F206B00D9B903 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4303A9AD246F35DE00BFE6AA /* RemoteAddAccount.swift */,
+				4303A9AF246F364A00BFE6AA /* HttpPostClient.swift */,
 				43D0111E246F206B00D9B903 /* Info.plist */,
 			);
 			path = Data;
@@ -346,6 +352,7 @@
 					};
 					43D0111A246F206B00D9B903 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					43D01122246F206B00D9B903 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -449,6 +456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4303A9B0246F364A00BFE6AA /* HttpPostClient.swift in Sources */,
+				4303A9AE246F35DE00BFE6AA /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +767,7 @@
 		43D0112D246F206B00D9B903 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -778,6 +788,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -787,6 +798,7 @@
 		43D0112E246F206B00D9B903 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -816,6 +828,7 @@
 		43D01130246F206B00D9B903 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8LH8763329;
@@ -836,6 +849,7 @@
 		43D01131246F206B00D9B903 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8LH8763329;

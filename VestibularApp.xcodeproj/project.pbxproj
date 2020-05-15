@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4303A9AC246F353F00BFE6AA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303A9AB246F353F00BFE6AA /* Model.swift */; };
 		4328C891246F1164007C6B69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C890246F1164007C6B69 /* AppDelegate.swift */; };
 		4328C893246F1164007C6B69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C892246F1164007C6B69 /* SceneDelegate.swift */; };
 		4328C895246F1164007C6B69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C894246F1164007C6B69 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4303A9AB246F353F00BFE6AA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4328C88D246F1164007C6B69 /* Seja Unip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seja Unip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4328C890246F1164007C6B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4328C892246F1164007C6B69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				43D01112246F1E2300D9B903 /* AddAccount.swift */,
 				43D01114246F202A00D9B903 /* AccountModel.swift */,
 				43D0110D246F1D8000D9B903 /* Info.plist */,
+				4303A9AB246F353F00BFE6AA /* Model.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4303A9AC246F353F00BFE6AA /* Model.swift in Sources */,
 				43D01113246F1E2300D9B903 /* AddAccount.swift in Sources */,
 				43D01115246F202A00D9B903 /* AccountModel.swift in Sources */,
 			);

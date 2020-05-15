@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct AccountModel {
-    var id: String
-    var cpf: String
-    var name: String
-    var dataNascimento: String
-    var anoConclusaoEnsinoMedio: Int64
-    var email: String
-    var password: String
+public struct AccountModel {
+    public var id: String
+    public var cpf: String
+    public var name: String
+    public var dataNascimento: String
+    public var anoConclusaoEnsinoMedio: Int64
+    public var email: String
+    public var password: String
 }

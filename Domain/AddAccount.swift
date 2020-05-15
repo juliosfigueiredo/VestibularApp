@@ -12,7 +12,7 @@ public protocol AddAccount {
     func add(addAccountModel: AddAccountModel, completion: @escaping (Result<AccountModel, Error>) -> Void)
 }
 
-public struct AddAccountModel {
+public struct AddAccountModel: Encodable {
     public var cpf: String
     public var name: String
     public var dataNascimento: String
@@ -20,4 +20,14 @@ public struct AddAccountModel {
     public var email: String
     public var password: String
     public var passwordConfirmation: String
+    
+    public init(cpf: String, name: String, dataNascimento: String, anoConclusaoEnsinoMedio: Int64, email: String, password: String, passwordConfirmation: String) {
+        self.cpf = cpf
+        self.name = name
+        self.dataNascimento = dataNascimento
+        self.anoConclusaoEnsinoMedio = anoConclusaoEnsinoMedio
+        self.email = email
+        self.password = password
+        self.passwordConfirmation = passwordConfirmation
+    }
 }

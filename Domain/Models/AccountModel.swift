@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct AccountModel {
+public struct AccountModel: Model {
     public var id: String
     public var cpf: String
     public var name: String
@@ -16,4 +16,14 @@ public struct AccountModel {
     public var anoConclusaoEnsinoMedio: Int64
     public var email: String
     public var password: String
+    
+    public init(id: String, cpf: String, name: String, dataNascimento: String, anoConclusaoEnsinoMedio: Int64, email: String, password: String) {
+        self.id = id
+        self.cpf = cpf
+        self.name = name
+        self.dataNascimento = dataNascimento
+        self.anoConclusaoEnsinoMedio = anoConclusaoEnsinoMedio
+        self.email = email
+        self.password = password
+    }
 }

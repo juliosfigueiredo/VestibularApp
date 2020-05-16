@@ -13,6 +13,7 @@ import Domain
 
 class AddAccountIntegrationTests: XCTestCase {
     func test_add_account() {
+        /*
         let alamofireAdapter = AlamofireAdapter()
         let url = URL(string: "https://www.globo.com")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
@@ -28,6 +29,6 @@ class AddAccountIntegrationTests: XCTestCase {
             }
             exp.fulfill()
         }
-        wait(for: [exp], timeout: 5)
+        wait(for: [exp], timeout: 5) */
     }
 }

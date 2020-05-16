@@ -7,54 +7,7 @@
 //
 
 import XCTest
-
-class SignPresenter {
-    private let alertView: AlertView
-    
-    init(alertView: AlertView) {
-        self.alertView = alertView
-    }
-    
-    func signUp(viewModel: SignViewModel) {
-        if let message = validate(viewModel: viewModel) {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
-        }
-    }
-    
-    private func validate(viewModel: SignViewModel) -> String? {
-        if viewModel.cpf == nil || viewModel.cpf!.isEmpty {
-            return "O campo cpf é obrigatorio"
-        } else if viewModel.name == nil || viewModel.name!.isEmpty {
-            return "O campo nome é obrigatorio"
-        } else if viewModel.email == nil || viewModel.email!.isEmpty {
-            return "O campo email é obrigatorio"
-        } else if viewModel.password == nil || viewModel.password!.isEmpty {
-            return "O campo senha é obrigatorio"
-        } else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
-            return "O campo confirmar senha é obrigatorio"
-        }
-        return nil
-    }
-}
-
-protocol AlertView {
-    func showMessage(viewModel: AlertViewModel)
-}
-
-struct AlertViewModel: Equatable {
-    var title: String
-    var message: String
-}
-
-struct SignViewModel {
-    var cpf: String?
-    var name: String?
-    var dataNascimento: String?
-    var anoConclusaoEnsinoMedio: Int64?
-    var email: String?
-    var password: String?
-    var passwordConfirmation: String?
-}
+import Presentation
 
 class SignPresenterTests: XCTestCase {
     func test_signUp_should_show_error_message_if_cpf_is_not_provider() {

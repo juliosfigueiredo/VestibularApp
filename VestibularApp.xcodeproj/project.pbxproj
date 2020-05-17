@@ -40,6 +40,7 @@
 		439E7D0324707A4A00B73B3D /* SignPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D0224707A4A00B73B3D /* SignPresenterTests.swift */; };
 		43ACD4372470E0370002ACE3 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ACD4362470E0370002ACE3 /* EmailValidator.swift */; };
 		43ACD4382470F3B10002ACE3 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4356292B246F6F8200C28608 /* AccountModelFactory.swift */; };
+		43ACD439247109B30002ACE3 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43562924246F6E5E00C28608 /* TestExtensions.swift */; };
 		43D01113246F1E2300D9B903 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D01112246F1E2300D9B903 /* AddAccount.swift */; };
 		43D01115246F202A00D9B903 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D01114246F202A00D9B903 /* AccountModel.swift */; };
 		43D01124246F206B00D9B903 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0111B246F206B00D9B903 /* Data.framework */; };
@@ -1005,6 +1006,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43ACD4382470F3B10002ACE3 /* AccountModelFactory.swift in Sources */,
+				43ACD439247109B30002ACE3 /* TestExtensions.swift in Sources */,
 				439E7D0324707A4A00B73B3D /* SignPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

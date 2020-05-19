@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  VestibularApp
+//  App
 //
-//  Created by Julio Figueiredo on 15/05/20.
+//  Created by Julio Figueiredo on 19/05/20.
 //  Copyright © 2020 Julio Figueiredo. All rights reserved.
 //
 
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentCloudKitContainer(name: "VestibularApp")
+        let container = NSPersistentCloudKitContainer(name: "App")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

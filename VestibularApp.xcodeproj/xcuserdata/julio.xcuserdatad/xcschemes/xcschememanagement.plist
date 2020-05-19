@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>CI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -34,11 +39,6 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>VestibularApp.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -63,6 +63,11 @@
 			<true/>
 		</dict>
 		<key>43562939246F73D800C28608</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4381E75924748AFF007B94A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

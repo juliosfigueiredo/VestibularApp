@@ -37,6 +37,10 @@
 		4356294F246F74D600C28608 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43562926246F6EDA00C28608 /* TestFactories.swift */; };
 		43562952246F758C00C28608 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 43562951246F758C00C28608 /* Alamofire */; };
 		435A5EE32472338B008CD75D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A5EE22472338B008CD75D /* LoadingView.swift */; };
+		436A532C24736DF500780D07 /* Artbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 436A532A24736DF500780D07 /* Artbrush.ttf */; };
+		436A532D24736DF500780D07 /* MyriadProCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 436A532B24736DF500780D07 /* MyriadProCond.ttf */; };
+		436A533024736E7500780D07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436A532F24736E7500780D07 /* SignUpViewController.swift */; };
+		436E690324746482003FD8C0 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E690224746482003FD8C0 /* AddAccountViewController.swift */; };
 		43730B3C2473096F00E2EE40 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B3B2473096F00E2EE40 /* SignUpViewModel.swift */; };
 		43730B3E247309C000E2EE40 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B3D247309C000E2EE40 /* SignUpMapper.swift */; };
 		43730B4224730C8000E2EE40 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4124730C8000E2EE40 /* AlertViewSpy.swift */; };
@@ -204,6 +208,10 @@
 		4356293F246F73D800C28608 /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
 		43562941246F73D800C28608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435A5EE22472338B008CD75D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		436A532A24736DF500780D07 /* Artbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Artbrush.ttf; sourceTree = "<group>"; };
+		436A532B24736DF500780D07 /* MyriadProCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadProCond.ttf; sourceTree = "<group>"; };
+		436A532F24736E7500780D07 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		436E690224746482003FD8C0 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		43730B3B2473096F00E2EE40 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		43730B3D247309C000E2EE40 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		43730B4124730C8000E2EE40 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -418,6 +426,8 @@
 		4328C88F246F1164007C6B69 /* VestibularApp */ = {
 			isa = PBXGroup;
 			children = (
+				436A532E24736E2200780D07 /* Controllers */,
+				436A532924736DCE00780D07 /* Fontes */,
 				4328C890246F1164007C6B69 /* AppDelegate.swift */,
 				4328C892246F1164007C6B69 /* SceneDelegate.swift */,
 				4328C894246F1164007C6B69 /* ViewController.swift */,
@@ -489,6 +499,24 @@
 				43562941246F73D800C28608 /* Info.plist */,
 			);
 			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		436A532924736DCE00780D07 /* Fontes */ = {
+			isa = PBXGroup;
+			children = (
+				436A532A24736DF500780D07 /* Artbrush.ttf */,
+				436A532B24736DF500780D07 /* MyriadProCond.ttf */,
+			);
+			path = Fontes;
+			sourceTree = "<group>";
+		};
+		436A532E24736E2200780D07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				436A532F24736E7500780D07 /* SignUpViewController.swift */,
+				436E690224746482003FD8C0 /* AddAccountViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		43730B3A2473094A00E2EE40 /* SignUp */ = {
@@ -952,9 +980,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436A532D24736DF500780D07 /* MyriadProCond.ttf in Resources */,
 				4328C8A0246F116D007C6B69 /* LaunchScreen.storyboard in Resources */,
 				4328C89D246F116D007C6B69 /* Assets.xcassets in Resources */,
 				4328C898246F1164007C6B69 /* Main.storyboard in Resources */,
+				436A532C24736DF500780D07 /* Artbrush.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,6 +1063,8 @@
 				4328C895246F1164007C6B69 /* ViewController.swift in Sources */,
 				4328C891246F1164007C6B69 /* AppDelegate.swift in Sources */,
 				4328C893246F1164007C6B69 /* SceneDelegate.swift in Sources */,
+				436E690324746482003FD8C0 /* AddAccountViewController.swift in Sources */,
+				436A533024736E7500780D07 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

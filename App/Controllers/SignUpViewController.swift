@@ -31,7 +31,10 @@ class SignUpViewController: UIViewController {
     private func configure() {
         btCadastrar.layer.cornerRadius = 5
         btCadastrar?.addTarget(self, action: #selector(btEntrarTapped), for: .touchUpInside)
+        hideKeyboardOnTap()
     }
+    
+    
     
     @objc private func btEntrarTapped() {
         guard let anoConclusao = tfAnoConclusao.text else {return}

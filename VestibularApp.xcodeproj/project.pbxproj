@@ -41,6 +41,7 @@
 		43562952246F758C00C28608 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 43562951246F758C00C28608 /* Alamofire */; };
 		435A5EE32472338B008CD75D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A5EE22472338B008CD75D /* LoadingView.swift */; };
 		43616A5724757541007C3635 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43616A5624757541007C3635 /* LoginViewController.swift */; };
+		43616A5A2475CC62007C3635 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43616A592475CC62007C3635 /* TestExtensions.swift */; };
 		43730B3C2473096F00E2EE40 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B3B2473096F00E2EE40 /* SignUpViewModel.swift */; };
 		43730B3E247309C000E2EE40 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B3D247309C000E2EE40 /* SignUpMapper.swift */; };
 		43730B4224730C8000E2EE40 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4124730C8000E2EE40 /* AlertViewSpy.swift */; };
@@ -241,6 +242,7 @@
 		43562941246F73D800C28608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		435A5EE22472338B008CD75D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		43616A5624757541007C3635 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		43616A592475CC62007C3635 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		43730B3B2473096F00E2EE40 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		43730B3D247309C000E2EE40 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		43730B4124730C8000E2EE40 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 		4319DEBA24748F0100108B8A /* AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				43616A582475CC38007C3635 /* Helpers */,
 				4319DEBB24748F0200108B8A /* SignUpViewControllerTests.swift */,
 				4319DEBD24748F0200108B8A /* Info.plist */,
 			);
@@ -564,6 +567,14 @@
 				43562941246F73D800C28608 /* Info.plist */,
 			);
 			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		43616A582475CC38007C3635 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				43616A592475CC62007C3635 /* TestExtensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		43730B3A2473094A00E2EE40 /* SignUp */ = {
@@ -1143,6 +1154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4319DEBC24748F0200108B8A /* SignUpViewControllerTests.swift in Sources */,
+				43616A5A2475CC62007C3635 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,8 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        vwLoading.isHidden = false
 
     }
     

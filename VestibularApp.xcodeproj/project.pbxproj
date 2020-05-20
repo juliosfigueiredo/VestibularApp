@@ -16,7 +16,7 @@
 		4319DEAC24748EFB00108B8A /* App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4319DEAA24748EFB00108B8A /* App.xcdatamodeld */; };
 		4319DEAE24748F0100108B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4319DEAD24748F0100108B8A /* Assets.xcassets */; };
 		4319DEB124748F0100108B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319DEAF24748F0100108B8A /* LaunchScreen.storyboard */; };
-		4319DEBC24748F0200108B8A /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DEBB24748F0200108B8A /* AppTests.swift */; };
+		4319DEBC24748F0200108B8A /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DEBB24748F0200108B8A /* SignUpViewControllerTests.swift */; };
 		4319DEC724748F0200108B8A /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DEC624748F0200108B8A /* AppUITests.swift */; };
 		4319DED42474992900108B8A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DED32474992900108B8A /* SignUpViewController.swift */; };
 		4319DED824749A2800108B8A /* MyriadProCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319DED624749A2800108B8A /* MyriadProCond.ttf */; };
@@ -194,7 +194,7 @@
 		4319DEB024748F0100108B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4319DEB224748F0100108B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4319DEB724748F0100108B8A /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4319DEBB24748F0200108B8A /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		4319DEBB24748F0200108B8A /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		4319DEBD24748F0200108B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4319DEC224748F0200108B8A /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4319DEC624748F0200108B8A /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
@@ -397,7 +397,7 @@
 		4319DEBA24748F0100108B8A /* AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				4319DEBB24748F0200108B8A /* AppTests.swift */,
+				4319DEBB24748F0200108B8A /* SignUpViewControllerTests.swift */,
 				4319DEBD24748F0200108B8A /* Info.plist */,
 			);
 			path = AppTests;
@@ -460,6 +460,8 @@
 			isa = PBXGroup;
 			children = (
 				4319DEA024748EFB00108B8A /* App */,
+				4319DEBA24748F0100108B8A /* AppTests */,
+				4319DEC524748F0200108B8A /* AppUITests */,
 				43D0110B246F1D8000D9B903 /* Domain */,
 				43D0111C246F206B00D9B903 /* Data */,
 				43D01127246F206B00D9B903 /* DataTests */,
@@ -468,8 +470,6 @@
 				4323AC9C247060A3001AFAEF /* UseCasesIntegrationTests */,
 				439E7CF624707A4A00B73B3D /* Presentation */,
 				439E7D0124707A4A00B73B3D /* PresentationTests */,
-				4319DEBA24748F0100108B8A /* AppTests */,
-				4319DEC524748F0200108B8A /* AppUITests */,
 				4328C88E246F1164007C6B69 /* Products */,
 				43D01132246F209200D9B903 /* Frameworks */,
 			);
@@ -1119,7 +1119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4319DEBC24748F0200108B8A /* AppTests.swift in Sources */,
+				4319DEBC24748F0200108B8A /* SignUpViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

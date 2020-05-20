@@ -18,9 +18,16 @@ class SignUpViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
         XCTAssertEqual(sut.vwLoading.isHidden, false)
     }
+    
     func test_sut_implements_loadingView() {
         let storyBoard = UIStoryboard(name: "Main", bundle: Bundle(for: SignUpViewController.self))
         let sut = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
         XCTAssertNotNil(sut as LoadingView)
+    }
+    
+    func test_sut_implements_alertView() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle(for: SignUpViewController.self))
+        let sut = storyBoard.instantiateViewController(identifier: "SignUpViewController") as! SignUpViewController
+        XCTAssertNotNil(sut as AlertView)
     }
 }

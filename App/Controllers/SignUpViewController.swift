@@ -29,6 +29,7 @@ class SignUpViewController: UIViewController {
     }
     
     private func configure() {
+        btCadastrar.layer.cornerRadius = 5
         btCadastrar?.addTarget(self, action: #selector(btEntrarTapped), for: .touchUpInside)
     }
     
@@ -43,8 +44,10 @@ class SignUpViewController: UIViewController {
 extension SignUpViewController: LoadingView {
     func display(viewModel: LoadingViewModel) {
         if viewModel.isLoading {
+            view.isUserInteractionEnabled = false
             vwLoading.isHidden = true
         } else {
+            view.isUserInteractionEnabled = true
             vwLoading.isHidden = false
         }
     }

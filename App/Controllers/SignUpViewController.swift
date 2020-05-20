@@ -11,8 +11,12 @@ import Presentation
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var tfCpf: UITextField!
+    @IBOutlet weak var tfNome: UITextField!
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfDataNascimento: UITextField!
+    @IBOutlet weak var tfAnoConclusao: UITextField!
     @IBOutlet weak var tfSenha: UITextField!
-    @IBOutlet weak var btEntrar: UIButton!
+    @IBOutlet weak var tfConfirmarSenha: UITextField!
     @IBOutlet weak var btCadastrar: UIButton!
     @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var vwLoading: UIView!
@@ -21,16 +25,18 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        vwLoading.isHidden = false
         configure()
     }
     
     private func configure() {
-        btEntrar?.addTarget(self, action: #selector(btEntrarTapped), for: .touchUpInside)
+        btCadastrar?.addTarget(self, action: #selector(btEntrarTapped), for: .touchUpInside)
     }
     
     @objc private func btEntrarTapped() {
-        signUp?(SignViewModel(cpf: nil, name: nil, dataNascimento: nil, anoConclusaoEnsinoMedio: nil, email: nil, password: nil, passwordConfirmation: nil))
+        guard let anoConclusao = tfAnoConclusao.text else {return}
+        let viewModel = SignViewModel(cpf: tfCpf.text, name: tfNome.text, dataNascimento: tfDataNascimento.text, anoConclusaoEnsinoMedio: Int64(anoConclusao), email: tfEmail.text, password: tfSenha.text, passwordConfirmation: tfConfirmarSenha.text)
+        
+        signUp?(viewModel)
     }
 }
 

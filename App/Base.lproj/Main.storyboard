@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Sign Up View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="XgA-R7-DYp">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="ilZ-nb-T3x" customClass="SignUpViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="ilZ-nb-T3x" customClass="LoginViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Bc-5c-8jS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="MOb-HC-IZY" kind="presentation" id="w78-9q-mtM"/>
+                                    <segue destination="MOb-HC-IZY" kind="presentation" id="tpn-Of-DK1"/>
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1h9-55-VWp">
@@ -121,23 +121,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qDx-VD-wI4"/>
                     </view>
-                    <connections>
-                        <outlet property="btCadastrar" destination="r5s-hO-2QY" id="To4-Ez-bv2"/>
-                        <outlet property="btEntrar" destination="iDM-lh-mIm" id="Dbe-fc-OfU"/>
-                        <outlet property="loading" destination="lrG-ht-L9v" id="2Mv-aS-KHx"/>
-                        <outlet property="tfCpf" destination="73K-ZM-DUl" id="3df-I2-yjS"/>
-                        <outlet property="tfSenha" destination="AXs-4V-P99" id="MBb-T0-lmt"/>
-                        <outlet property="vwLoading" destination="1h9-55-VWp" id="td4-fc-0ED"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AfN-by-QJo" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="93.842364532019715"/>
         </scene>
-        <!--Add Account View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="aK5-dq-Y9O">
             <objects>
-                <viewController id="MOb-HC-IZY" customClass="AddAccountViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="MOb-HC-IZY" customClass="SignUpViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a6Y-Bv-zrX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,6 +209,20 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3RQ-6z-T3d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="a8q-6n-0pQ">
+                                        <rect key="frame" x="188.5" y="402.5" width="37" height="37"/>
+                                        <color key="color" name="Primaria"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="a8q-6n-0pQ" firstAttribute="centerX" secondItem="3RQ-6z-T3d" secondAttribute="centerX" id="0ia-z3-Qjk"/>
+                                    <constraint firstItem="a8q-6n-0pQ" firstAttribute="centerY" secondItem="3RQ-6z-T3d" secondAttribute="centerY" id="2jJ-OM-cx6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="Primaria"/>
                         <constraints>
@@ -230,12 +236,16 @@
                             <constraint firstItem="v9i-nt-l5n" firstAttribute="leading" secondItem="lFM-uw-Ovk" secondAttribute="leading" id="IC6-5q-Tsv"/>
                             <constraint firstItem="eVi-L5-eco" firstAttribute="top" secondItem="3iY-Uk-HDe" secondAttribute="bottom" constant="12" id="KsA-QW-ksk"/>
                             <constraint firstItem="gqQ-P5-c1L" firstAttribute="height" secondItem="Mn2-55-sVh" secondAttribute="height" id="LD4-vW-1o9"/>
+                            <constraint firstItem="3RQ-6z-T3d" firstAttribute="trailing" secondItem="4SH-ou-Rka" secondAttribute="trailing" id="Nty-R4-Fie"/>
                             <constraint firstItem="lFM-uw-Ovk" firstAttribute="top" secondItem="eVi-L5-eco" secondAttribute="bottom" constant="1" id="O8P-bM-nUv"/>
                             <constraint firstItem="gqQ-P5-c1L" firstAttribute="trailing" secondItem="Mn2-55-sVh" secondAttribute="trailing" id="ScQ-xn-qZx"/>
                             <constraint firstItem="3iY-Uk-HDe" firstAttribute="leading" secondItem="4SH-ou-Rka" secondAttribute="leading" constant="40" id="ShN-OI-iGP"/>
                             <constraint firstItem="lFM-uw-Ovk" firstAttribute="trailing" secondItem="eVi-L5-eco" secondAttribute="trailing" id="Sxs-l2-136"/>
                             <constraint firstItem="Mn2-55-sVh" firstAttribute="height" secondItem="urf-Kh-rPP" secondAttribute="height" id="Upp-oV-Oxi"/>
                             <constraint firstItem="Mn2-55-sVh" firstAttribute="top" secondItem="urf-Kh-rPP" secondAttribute="bottom" constant="15" id="UwJ-vU-wSH"/>
+                            <constraint firstAttribute="bottom" secondItem="3RQ-6z-T3d" secondAttribute="bottom" id="V5k-FN-uF7"/>
+                            <constraint firstItem="3RQ-6z-T3d" firstAttribute="leading" secondItem="4SH-ou-Rka" secondAttribute="leading" id="Ysx-wW-K6H"/>
+                            <constraint firstItem="3RQ-6z-T3d" firstAttribute="top" secondItem="a6Y-Bv-zrX" secondAttribute="top" id="Zud-wu-b07"/>
                             <constraint firstItem="djq-v5-jd6" firstAttribute="height" secondItem="jHt-kh-XaW" secondAttribute="height" id="aBg-3u-smC"/>
                             <constraint firstItem="urf-Kh-rPP" firstAttribute="height" secondItem="v9i-nt-l5n" secondAttribute="height" id="aFc-Fe-9Mn"/>
                             <constraint firstItem="jHt-kh-XaW" firstAttribute="leading" secondItem="CBm-mz-x4h" secondAttribute="leading" id="aU9-Oc-Pbt"/>
@@ -263,19 +273,21 @@
                         <viewLayoutGuide key="safeArea" id="4SH-ou-Rka"/>
                     </view>
                     <connections>
-                        <outlet property="btCadastrar" destination="wX2-nP-Lah" id="j6K-wb-txT"/>
-                        <outlet property="tfAnoConclusao" destination="CBm-mz-x4h" id="IWg-ML-SIz"/>
-                        <outlet property="tfConfirmarSenha" destination="djq-v5-jd6" id="yLR-aM-AUc"/>
-                        <outlet property="tfCpf" destination="v9i-nt-l5n" id="1QE-go-D8o"/>
-                        <outlet property="tfDataNascimento" destination="gqQ-P5-c1L" id="CRa-32-JTe"/>
-                        <outlet property="tfEmail" destination="Mn2-55-sVh" id="d36-iA-eeJ"/>
-                        <outlet property="tfNome" destination="urf-Kh-rPP" id="715-T5-pVc"/>
-                        <outlet property="tfSenha" destination="jHt-kh-XaW" id="tIB-qt-XtE"/>
+                        <outlet property="btCadastrar" destination="wX2-nP-Lah" id="3iX-Za-CSs"/>
+                        <outlet property="loading" destination="a8q-6n-0pQ" id="XyR-Xg-xLb"/>
+                        <outlet property="tfAnoConclusao" destination="CBm-mz-x4h" id="ff0-aH-y18"/>
+                        <outlet property="tfConfirmarSenha" destination="djq-v5-jd6" id="JlS-t8-iWG"/>
+                        <outlet property="tfCpf" destination="v9i-nt-l5n" id="p9c-5m-Y54"/>
+                        <outlet property="tfDataNascimento" destination="gqQ-P5-c1L" id="7zs-FV-nuk"/>
+                        <outlet property="tfEmail" destination="Mn2-55-sVh" id="B6F-wW-sD9"/>
+                        <outlet property="tfNome" destination="urf-Kh-rPP" id="p6z-G2-fOw"/>
+                        <outlet property="tfSenha" destination="jHt-kh-XaW" id="rtc-b1-Exu"/>
+                        <outlet property="vwLoading" destination="3RQ-6z-T3d" id="HIM-r0-Q3r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tPz-NU-0ZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919.20000000000005" y="91.625615763546804"/>
+            <point key="canvasLocation" x="918.84057971014499" y="91.071428571428569"/>
         </scene>
     </scenes>
     <resources>

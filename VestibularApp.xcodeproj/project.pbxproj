@@ -45,6 +45,7 @@
 		43616A5D2475DA51007C3635 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43616A5C2475DA51007C3635 /* UIViewControllerExtensions.swift */; };
 		43616A5E2475DFC3007C3635 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439E7CF524707A4A00B73B3D /* Presentation.framework */; };
 		43616A5F2475DFC3007C3635 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 439E7CF524707A4A00B73B3D /* Presentation.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43616A622475E432007C3635 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43616A612475E432007C3635 /* Storyboarded.swift */; };
 		43730B3C2473096F00E2EE40 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B3B2473096F00E2EE40 /* SignUpViewModel.swift */; };
 		43730B3E247309C000E2EE40 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B3D247309C000E2EE40 /* SignUpMapper.swift */; };
 		43730B4224730C8000E2EE40 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4124730C8000E2EE40 /* AlertViewSpy.swift */; };
@@ -245,6 +246,7 @@
 		43616A5624757541007C3635 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43616A592475CC62007C3635 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		43616A5C2475DA51007C3635 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		43616A612475E432007C3635 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		43730B3B2473096F00E2EE40 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		43730B3D247309C000E2EE40 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 		43730B4124730C8000E2EE40 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
@@ -584,6 +586,7 @@
 			isa = PBXGroup;
 			children = (
 				43616A5C2475DA51007C3635 /* UIViewControllerExtensions.swift */,
+				43616A612475E432007C3635 /* Storyboarded.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1158,6 +1161,7 @@
 				43616A5724757541007C3635 /* LoginViewController.swift in Sources */,
 				43616A5D2475DA51007C3635 /* UIViewControllerExtensions.swift in Sources */,
 				4319DEA424748EFB00108B8A /* SceneDelegate.swift in Sources */,
+				43616A622475E432007C3635 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

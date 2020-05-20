@@ -9,7 +9,7 @@
 import UIKit
 import Presentation
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, Storyboarded {
     @IBOutlet weak var tfCpf: UITextField!
     @IBOutlet weak var tfNome: UITextField!
     @IBOutlet weak var tfEmail: UITextField!

@@ -17,15 +17,20 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var vwLoading: UIView!
 
+    var signUp: ((SignViewModel) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         vwLoading.isHidden = false
-
+        configure()
     }
     
-    @IBAction func signUp(_ sender: Any) {
-        
+    private func configure() {
+        btEntrar?.addTarget(self, action: #selector(btEntrarTapped), for: .touchUpInside)
+    }
+    
+    @objc private func btEntrarTapped() {
+        signUp?(SignViewModel(cpf: nil, name: nil, dataNascimento: nil, anoConclusaoEnsinoMedio: nil, email: nil, password: nil, passwordConfirmation: nil))
     }
 }
 

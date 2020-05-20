@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Presentation
 
 class SignUpViewController: UIViewController {
     @IBOutlet weak var tfCpf: UITextField!
@@ -25,5 +26,15 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUp(_ sender: Any) {
         
+    }
+}
+
+extension SignUpViewController: LoadingView {
+    func display(viewModel: LoadingViewModel) {
+        if viewModel.isLoading {
+            vwLoading.isHidden = true
+        } else {
+            vwLoading.isHidden = false
+        }
     }
 }

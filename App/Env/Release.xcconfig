@@ -1,0 +1,12 @@
+//
+//  Release.xcconfig
+//  VestibularApp
+//
+//  Created by Julio Figueiredo on 21/05/20.
+//  Copyright © 2020 Julio Figueiredo. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_BASE_URL = https:/$()/www.globo.com

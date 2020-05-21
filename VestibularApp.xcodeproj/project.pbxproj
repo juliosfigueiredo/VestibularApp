@@ -23,6 +23,7 @@
 		43220CFF247713CB00960714 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220CFE247713CB00960714 /* SignUpViewControllerTests.swift */; };
 		43220D01247714A000960714 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D00247714A000960714 /* SignUpIntegrationTests.swift */; };
 		43220D04247718AC00960714 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D03247718AC00960714 /* WeakVarProxy.swift */; };
+		43220D0924771FB700960714 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D0824771FB700960714 /* Environment.swift */; };
 		43231E3D2476C55500C9184B /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43231E3C2476C55500C9184B /* UseCaseFactory.swift */; };
 		43231E402476C5D600C9184B /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43231E3F2476C5D600C9184B /* SignUpComposer.swift */; };
 		43231E432476C7C100C9184B /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4724730D0700E2EE40 /* AddAccountSpy.swift */; };
@@ -310,6 +311,9 @@
 		43220CFE247713CB00960714 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		43220D00247714A000960714 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		43220D03247718AC00960714 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
+		43220D0624771E9200960714 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		43220D0724771F0500960714 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		43220D0824771FB700960714 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		43231E3C2476C55500C9184B /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		43231E3F2476C5D600C9184B /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		4323AC91247055C2001AFAEF /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
@@ -521,6 +525,7 @@
 		4319DEA024748EFB00108B8A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				43220D0524771E7A00960714 /* Env */,
 				43220D022477189600960714 /* Proxies */,
 				43231E3E2476C5C400C9184B /* Composers */,
 				43900646247600A100B33874 /* Factories */,
@@ -582,6 +587,16 @@
 				43220D03247718AC00960714 /* WeakVarProxy.swift */,
 			);
 			path = Proxies;
+			sourceTree = "<group>";
+		};
+		43220D0524771E7A00960714 /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				43220D0824771FB700960714 /* Environment.swift */,
+				43220D0624771E9200960714 /* Debug.xcconfig */,
+				43220D0724771F0500960714 /* Release.xcconfig */,
+			);
+			path = Env;
 			sourceTree = "<group>";
 		};
 		43231E3E2476C5C400C9184B /* Composers */ = {
@@ -1398,6 +1413,7 @@
 				43616A5D2475DA51007C3635 /* UIViewControllerExtensions.swift in Sources */,
 				4319DEA424748EFB00108B8A /* SceneDelegate.swift in Sources */,
 				43231E3D2476C55500C9184B /* UseCaseFactory.swift in Sources */,
+				43220D0924771FB700960714 /* Environment.swift in Sources */,
 				43616A622475E432007C3635 /* Storyboarded.swift in Sources */,
 				43220D04247718AC00960714 /* WeakVarProxy.swift in Sources */,
 				43231E402476C5D600C9184B /* SignUpComposer.swift in Sources */,
@@ -1651,6 +1667,7 @@
 /* Begin XCBuildConfiguration section */
 		4319DECA24748F0200108B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43220D0624771E9200960714 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1671,6 +1688,7 @@
 		};
 		4319DECB24748F0200108B8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43220D0724771F0500960714 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";

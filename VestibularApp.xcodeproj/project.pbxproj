@@ -21,7 +21,7 @@
 		4319DED824749A2800108B8A /* MyriadProCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319DED624749A2800108B8A /* MyriadProCond.ttf */; };
 		4319DED924749A2800108B8A /* Artbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319DED724749A2800108B8A /* Artbrush.ttf */; };
 		43220CFF247713CB00960714 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220CFE247713CB00960714 /* SignUpViewControllerTests.swift */; };
-		43220D01247714A000960714 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D00247714A000960714 /* SignUpIntegrationTests.swift */; };
+		43220D01247714A000960714 /* SignUpComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D00247714A000960714 /* SignUpComposerTests.swift */; };
 		43220D04247718AC00960714 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D03247718AC00960714 /* WeakVarProxy.swift */; };
 		43220D0924771FB700960714 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D0824771FB700960714 /* Environment.swift */; };
 		43231E3D2476C55500C9184B /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43231E3C2476C55500C9184B /* UseCaseFactory.swift */; };
@@ -309,7 +309,7 @@
 		4319DED624749A2800108B8A /* MyriadProCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadProCond.ttf; sourceTree = "<group>"; };
 		4319DED724749A2800108B8A /* Artbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Artbrush.ttf; sourceTree = "<group>"; };
 		43220CFE247713CB00960714 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
-		43220D00247714A000960714 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		43220D00247714A000960714 /* SignUpComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposerTests.swift; sourceTree = "<group>"; };
 		43220D03247718AC00960714 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		43220D0624771E9200960714 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		43220D0724771F0500960714 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -548,7 +548,7 @@
 			children = (
 				43616A582475CC38007C3635 /* Helpers */,
 				43220CFE247713CB00960714 /* SignUpViewControllerTests.swift */,
-				43220D00247714A000960714 /* SignUpIntegrationTests.swift */,
+				43220D0A2477325B00960714 /* Composers */,
 				4319DEBD24748F0200108B8A /* Info.plist */,
 			);
 			path = AppTests;
@@ -597,6 +597,14 @@
 				43220D0724771F0500960714 /* Release.xcconfig */,
 			);
 			path = Env;
+			sourceTree = "<group>";
+		};
+		43220D0A2477325B00960714 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				43220D00247714A000960714 /* SignUpComposerTests.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 		43231E3E2476C5C400C9184B /* Composers */ = {
@@ -1424,7 +1432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43220D01247714A000960714 /* SignUpIntegrationTests.swift in Sources */,
+				43220D01247714A000960714 /* SignUpComposerTests.swift in Sources */,
 				43231E432476C7C100C9184B /* AddAccountSpy.swift in Sources */,
 				43616A5A2475CC62007C3635 /* TestUIExtensions.swift in Sources */,
 				43F609E62476D6150009F10C /* TestExtensions.swift in Sources */,

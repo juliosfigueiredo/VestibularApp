@@ -9,7 +9,7 @@
 import XCTest
 @testable import App
 
-class SignUpIntegrationTests: XCTestCase {
+class SignUpComposerTests: XCTestCase {
     func test_ui_presentation_integration() {
         debugPrint("====================")
         debugPrint(Environment.variable(.apiBaseUrl))
@@ -18,3 +18,5 @@ class SignUpIntegrationTests: XCTestCase {
         checkMemoryLeak(for: sut)
     }
 }
+
+

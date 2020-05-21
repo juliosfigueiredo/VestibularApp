@@ -1,8 +1,8 @@
 //
-//  AppTests.swift
+//  SignUpViewControllerTests.swift
 //  AppTests
 //
-//  Created by Julio Figueiredo on 19/05/20.
+//  Created by Julio Figueiredo on 21/05/20.
 //  Copyright © 2020 Julio Figueiredo. All rights reserved.
 //
 

@@ -1,13 +1,13 @@
 //
 //  EmailValidatorAdapter.swift
-//  Validation
+//  Infra
 //
 //  Created by Julio Figueiredo on 20/05/20.
 //  Copyright © 2020 Julio Figueiredo. All rights reserved.
 //
 
 import Foundation
-import Presentation
+import Validation
 
 public final class EmailValidatorAdapter: EmailValidator {
     private let pattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"

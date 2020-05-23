@@ -1,13 +1,13 @@
 //
 //  EmailValidatorSpy.swift
-//  PresentationTests
+//  ValidationTests
 //
-//  Created by Julio Figueiredo on 18/05/20.
+//  Created by Julio Figueiredo on 22/05/20.
 //  Copyright © 2020 Julio Figueiredo. All rights reserved.
 //
 
 import Foundation
-import Presentation
+import Validation
 
 class EmailValidatorSpy: EmailValidator {
     var isValid = true
@@ -18,7 +18,7 @@ class EmailValidatorSpy: EmailValidator {
         return isValid
     }
     
-    func simulateInvalidEmail() {
+    func SimulateInvalidEmail() {
         isValid = false
     }
 }

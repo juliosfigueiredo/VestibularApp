@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Validation
 @testable import App
 
 class SignUpComposerTests: XCTestCase {
@@ -23,6 +24,19 @@ class SignUpComposerTests: XCTestCase {
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1)
+    }
+    
+    func test_signUp_compose_with_correct_validations() {
+        let validations = SignUpComposer.makeValidations()
+        XCTAssertEqual(validations[0] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "cpf", fieldLabel: "CPF"))
+        XCTAssertEqual(validations[1] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "name", fieldLabel: "Nome"))
+        XCTAssertEqual(validations[2] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "email", fieldLabel: "Email"))
+        XCTAssertEqual(validations[3] as! EmailValidation, EmailValidation(fieldName: "email", fieldLabel: "Email", emailValidator: EmailValidatorSpy()))
+        XCTAssertEqual(validations[4] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "dataNascimento", fieldLabel: "Data de Nascimento"))
+        XCTAssertEqual(validations[5] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "anoConclusaoEnsinoMedio", fieldLabel: "Ano de conclusão do ensino médio"))
+        XCTAssertEqual(validations[6] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "password", fieldLabel: "Senha"))
+        XCTAssertEqual(validations[7] as! RequiredFieldValidation, RequiredFieldValidation(fieldName: "passwordConfirmation", fieldLabel: "Confirmar senha"))
+        XCTAssertEqual(validations[8] as! CompareFieldsValidation, CompareFieldsValidation(fieldName: "password", fieldNameToCompare: "passwordConfirmation", fieldLabel: "Confirmar senha"))
     }
 }
 

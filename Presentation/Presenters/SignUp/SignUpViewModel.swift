@@ -27,4 +27,8 @@ public struct SignViewModel: Model {
         self.password = password
         self.passwordConfirmation = passwordConfirmation
     }
+    
+    public func toAddAccountModel() -> AddAccountModel {
+        return AddAccountModel(cpf: cpf!, name: name!, dataNascimento: dataNascimento!, anoConclusaoEnsinoMedio: anoConclusaoEnsinoMedio!, email: email!, password: password!, passwordConfirmation: passwordConfirmation!)
+    }
 }

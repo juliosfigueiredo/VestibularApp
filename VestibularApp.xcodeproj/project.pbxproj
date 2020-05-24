@@ -21,11 +21,11 @@
 		4319DED824749A2800108B8A /* MyriadProCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319DED624749A2800108B8A /* MyriadProCond.ttf */; };
 		4319DED924749A2800108B8A /* Artbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319DED724749A2800108B8A /* Artbrush.ttf */; };
 		43220CFF247713CB00960714 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220CFE247713CB00960714 /* SignUpViewControllerTests.swift */; };
-		43220D01247714A000960714 /* SignUpComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D00247714A000960714 /* SignUpComposerTests.swift */; };
+		43220D01247714A000960714 /* SignUpFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D00247714A000960714 /* SignUpFactoryTests.swift */; };
 		43220D04247718AC00960714 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D03247718AC00960714 /* WeakVarProxy.swift */; };
 		43220D0924771FB700960714 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43220D0824771FB700960714 /* Environment.swift */; };
-		43231E3D2476C55500C9184B /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43231E3C2476C55500C9184B /* UseCaseFactory.swift */; };
-		43231E402476C5D600C9184B /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43231E3F2476C5D600C9184B /* SignUpComposer.swift */; };
+		43231E3D2476C55500C9184B /* RemoteAddAccountFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43231E3C2476C55500C9184B /* RemoteAddAccountFactory.swift */; };
+		43231E402476C5D600C9184B /* SignUpControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43231E3F2476C5D600C9184B /* SignUpControllerFactory.swift */; };
 		43231E432476C7C100C9184B /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4724730D0700E2EE40 /* AddAccountSpy.swift */; };
 		4323AC92247055C2001AFAEF /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323AC91247055C2001AFAEF /* AlamofireAdapter.swift */; };
 		4323AC9624705715001AFAEF /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323AC9524705715001AFAEF /* UrlProtocolStub.swift */; };
@@ -92,6 +92,9 @@
 		439E7D0324707A4A00B73B3D /* SignPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D0224707A4A00B73B3D /* SignPresenterTests.swift */; };
 		43A9586E247A145600094B46 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0110A246F1D8000D9B903 /* Domain.framework */; };
 		43A9586F247A145600094B46 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0110A246F1D8000D9B903 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43A95874247A328500094B46 /* ApiUrlFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A95873247A328500094B46 /* ApiUrlFactory.swift */; };
+		43A95877247A341900094B46 /* AlamofireAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A95876247A341900094B46 /* AlamofireAdapterFactory.swift */; };
+		43A9587B247A36CC00094B46 /* EmailValidatorAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9587A247A36CC00094B46 /* EmailValidatorAdapterFactory.swift */; };
 		43ACD4382470F3B10002ACE3 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4356292B246F6F8200C28608 /* AccountModelFactory.swift */; };
 		43ACD439247109B30002ACE3 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43562924246F6E5E00C28608 /* TestExtensions.swift */; };
 		43D01113246F1E2300D9B903 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D01112246F1E2300D9B903 /* AddAccount.swift */; };
@@ -333,13 +336,13 @@
 		4319DED624749A2800108B8A /* MyriadProCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadProCond.ttf; sourceTree = "<group>"; };
 		4319DED724749A2800108B8A /* Artbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Artbrush.ttf; sourceTree = "<group>"; };
 		43220CFE247713CB00960714 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
-		43220D00247714A000960714 /* SignUpComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposerTests.swift; sourceTree = "<group>"; };
+		43220D00247714A000960714 /* SignUpFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFactoryTests.swift; sourceTree = "<group>"; };
 		43220D03247718AC00960714 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		43220D0624771E9200960714 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		43220D0724771F0500960714 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		43220D0824771FB700960714 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		43231E3C2476C55500C9184B /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
-		43231E3F2476C5D600C9184B /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
+		43231E3C2476C55500C9184B /* RemoteAddAccountFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountFactory.swift; sourceTree = "<group>"; };
+		43231E3F2476C5D600C9184B /* SignUpControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpControllerFactory.swift; sourceTree = "<group>"; };
 		4323AC91247055C2001AFAEF /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		4323AC9524705715001AFAEF /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		4323AC9B247060A3001AFAEF /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +394,9 @@
 		439E7CFD24707A4A00B73B3D /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		439E7D0224707A4A00B73B3D /* SignPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPresenterTests.swift; sourceTree = "<group>"; };
 		439E7D0424707A4A00B73B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A95873247A328500094B46 /* ApiUrlFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUrlFactory.swift; sourceTree = "<group>"; };
+		43A95876247A341900094B46 /* AlamofireAdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterFactory.swift; sourceTree = "<group>"; };
+		43A9587A247A36CC00094B46 /* EmailValidatorAdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapterFactory.swift; sourceTree = "<group>"; };
 		43D0110A246F1D8000D9B903 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D0110D246F1D8000D9B903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43D01112246F1E2300D9B903 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -564,7 +570,6 @@
 				43974686247748DF00051D52 /* Decorators */,
 				43220D0524771E7A00960714 /* Env */,
 				43220D022477189600960714 /* Proxies */,
-				43231E3E2476C5C400C9184B /* Composers */,
 				43900646247600A100B33874 /* Factories */,
 				43616A5B2475DA33007C3635 /* Helpers */,
 				4319DED5247499DC00108B8A /* Fontes */,
@@ -639,15 +644,7 @@
 		43220D0A2477325B00960714 /* Composers */ = {
 			isa = PBXGroup;
 			children = (
-				43220D00247714A000960714 /* SignUpComposerTests.swift */,
-			);
-			path = Composers;
-			sourceTree = "<group>";
-		};
-		43231E3E2476C5C400C9184B /* Composers */ = {
-			isa = PBXGroup;
-			children = (
-				43231E3F2476C5D600C9184B /* SignUpComposer.swift */,
+				43220D00247714A000960714 /* SignUpFactoryTests.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -918,7 +915,9 @@
 		43900646247600A100B33874 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				43231E3C2476C55500C9184B /* UseCaseFactory.swift */,
+				43A95878247A342B00094B46 /* Infra */,
+				43A95879247A346600094B46 /* Controllers */,
+				43A95875247A334F00094B46 /* Http */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -953,6 +952,32 @@
 				439E7D0424707A4A00B73B3D /* Info.plist */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		43A95875247A334F00094B46 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				43231E3C2476C55500C9184B /* RemoteAddAccountFactory.swift */,
+				43A95873247A328500094B46 /* ApiUrlFactory.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		43A95878247A342B00094B46 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				43A95876247A341900094B46 /* AlamofireAdapterFactory.swift */,
+				43A9587A247A36CC00094B46 /* EmailValidatorAdapterFactory.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		43A95879247A346600094B46 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43231E3F2476C5D600C9184B /* SignUpControllerFactory.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		43ACD4352470E0210002ACE3 /* Validators */ = {
@@ -1520,17 +1545,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4319DEAC24748EFB00108B8A /* App.xcdatamodeld in Sources */,
+				43A95874247A328500094B46 /* ApiUrlFactory.swift in Sources */,
 				4319DEA224748EFB00108B8A /* AppDelegate.swift in Sources */,
+				43A9587B247A36CC00094B46 /* EmailValidatorAdapterFactory.swift in Sources */,
 				4319DED42474992900108B8A /* SignUpViewController.swift in Sources */,
 				43616A5724757541007C3635 /* LoginViewController.swift in Sources */,
+				43A95877247A341900094B46 /* AlamofireAdapterFactory.swift in Sources */,
 				43974688247748F200051D52 /* MainQueueDispatchDecorator.swift in Sources */,
 				43616A5D2475DA51007C3635 /* UIViewControllerExtensions.swift in Sources */,
 				4319DEA424748EFB00108B8A /* SceneDelegate.swift in Sources */,
-				43231E3D2476C55500C9184B /* UseCaseFactory.swift in Sources */,
+				43231E3D2476C55500C9184B /* RemoteAddAccountFactory.swift in Sources */,
 				43220D0924771FB700960714 /* Environment.swift in Sources */,
 				43616A622475E432007C3635 /* Storyboarded.swift in Sources */,
 				43220D04247718AC00960714 /* WeakVarProxy.swift in Sources */,
-				43231E402476C5D600C9184B /* SignUpComposer.swift in Sources */,
+				43231E402476C5D600C9184B /* SignUpControllerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1539,7 +1567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				439746852477364400051D52 /* TestFactories.swift in Sources */,
-				43220D01247714A000960714 /* SignUpComposerTests.swift in Sources */,
+				43220D01247714A000960714 /* SignUpFactoryTests.swift in Sources */,
 				43751C6124798CFD00F18D6D /* EmailValidatorSpy.swift in Sources */,
 				43231E432476C7C100C9184B /* AddAccountSpy.swift in Sources */,
 				43616A5A2475CC62007C3635 /* TestUIExtensions.swift in Sources */,

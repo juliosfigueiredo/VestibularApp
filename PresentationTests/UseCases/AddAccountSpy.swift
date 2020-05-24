@@ -19,7 +19,7 @@ class AddAccountSpy: AddAccount {
     }
     
     func completeWithError(_ error: DomainError) {
-        completion?(.failure(.unexpected))
+        completion?(.failure(error))
     }
     
     func completeWithAccount(_ account: AccountModel) {

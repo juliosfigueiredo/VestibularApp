@@ -32,7 +32,7 @@ class LoginPresenterTests: XCTestCase {
         wait(for: [exp], timeout: 1)
     }
     
-    func test_signUp_should_call_authentication_with_correct_values() {
+    func test_login_should_call_authentication_with_correct_values() {
         let authenticationSpy = AuthenticationSpy()
         let sut = makeSut(authentication: authenticationSpy)
         sut.login(viewModel: makeLoginViewModel())
@@ -64,6 +64,20 @@ class LoginPresenterTests: XCTestCase {
         }
         sut.login(viewModel: makeLoginViewModel())
         authenticationSpy.completeWithError(.expiredSession)
+        wait(for: [exp], timeout: 1)
+    }
+    
+    func test_login_should_show_success_message_if_authentication_succeeds() {
+        let alertViewSpy = AlertViewSpy()
+        let authenticationSpy = AuthenticationSpy()
+        let sut = makeSut(authentication: authenticationSpy, alertView: alertViewSpy)
+        let exp = expectation(description: "waiting")
+        alertViewSpy.observe { (viewModel) in
+            XCTAssertEqual(viewModel, AlertViewModel(title: "Sucesso", message: "Login feito com sucesso."))
+            exp.fulfill()
+        }
+        sut.login(viewModel: makeLoginViewModel())
+        authenticationSpy.completeWithAccount(makeAccountModel())
         wait(for: [exp], timeout: 1)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import Presentation
 
-class LoginViewController: UIViewController, Storyboarded {
+public class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var vwLoading: UIView!
     @IBOutlet weak var tfCpf: UITextField!
@@ -19,7 +19,7 @@ class LoginViewController: UIViewController, Storyboarded {
     
     var login: ((LoginViewModel) -> Void)?
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         configure()
         

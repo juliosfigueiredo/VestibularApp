@@ -17,11 +17,25 @@ class LoginPresenterTests: XCTestCase {
         sut.login(viewModel: viewModel)
         XCTAssertTrue(NSDictionary(dictionary: validationSpy.data!).isEqual(to: viewModel.toJson()!))
     }
+    
+    func test_login_should_show_error_message_if_validation_fails() {
+        let alertViewSpy = AlertViewSpy()
+        let validationSpy = ValidationSpy()
+        let sut = makeSut(validation: validationSpy, alertView: alertViewSpy)
+        let exp = expectation(description: "waiting")
+        alertViewSpy.observe { (viewModel) in
+            XCTAssertEqual(viewModel, AlertViewModel(title: "Falha na validação", message: "Erro"))
+            exp.fulfill()
+        }
+        validationSpy.simulateError()
+        sut.login(viewModel: makeLoginViewModel())
+        wait(for: [exp], timeout: 1)
+    }
 }
 
 extension LoginPresenterTests {
-    func makeSut(validation: ValidationSpy = ValidationSpy(), file: StaticString = #file, line: UInt = #line) -> LoginPresenter {
-        let sut = LoginPresenter(validation: validation)
+    func makeSut(validation: ValidationSpy = ValidationSpy(), alertView: AlertViewSpy = AlertViewSpy(), file: StaticString = #file, line: UInt = #line) -> LoginPresenter {
+        let sut = LoginPresenter(validation: validation, alertView: alertView)
         checkMemoryLeak(for: sut, file: file, line: line)
         return sut
     }

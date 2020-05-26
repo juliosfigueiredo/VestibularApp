@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Presentation
 
 class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var loading: UIActivityIndicatorView!
@@ -26,5 +27,17 @@ class LoginViewController: UIViewController, Storyboarded {
         btEntrar.layer.cornerRadius = 5
         btCadastrar.layer.cornerRadius = 5
         hideKeyboardOnTap()
+    }
+}
+
+extension LoginViewController: LoadingView {
+    public func display(viewModel: LoadingViewModel) {
+        if viewModel.isLoading {
+            view.isUserInteractionEnabled = false
+            vwLoading.isHidden = true
+        } else {
+            view.isUserInteractionEnabled = true
+            vwLoading.isHidden = false
+        }
     }
 }

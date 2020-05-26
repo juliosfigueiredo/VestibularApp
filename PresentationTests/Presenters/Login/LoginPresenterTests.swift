@@ -31,11 +31,18 @@ class LoginPresenterTests: XCTestCase {
         sut.login(viewModel: makeLoginViewModel())
         wait(for: [exp], timeout: 1)
     }
+    
+    func test_signUp_should_call_authentication_with_correct_values() {
+        let authenticationSpy = AuthenticationSpy()
+        let sut = makeSut(authentication: authenticationSpy)
+        sut.login(viewModel: makeLoginViewModel())
+        XCTAssertEqual(authenticationSpy.authenticationModel, makeAuthenticationModel())
+    }
 }
 
 extension LoginPresenterTests {
-    func makeSut(validation: ValidationSpy = ValidationSpy(), alertView: AlertViewSpy = AlertViewSpy(), file: StaticString = #file, line: UInt = #line) -> LoginPresenter {
-        let sut = LoginPresenter(validation: validation, alertView: alertView)
+    func makeSut(validation: ValidationSpy = ValidationSpy(), authentication: AuthenticationSpy = AuthenticationSpy(), alertView: AlertViewSpy = AlertViewSpy(), file: StaticString = #file, line: UInt = #line) -> LoginPresenter {
+        let sut = LoginPresenter(validation: validation, authentication: authentication, alertView: alertView)
         checkMemoryLeak(for: sut, file: file, line: line)
         return sut
     }

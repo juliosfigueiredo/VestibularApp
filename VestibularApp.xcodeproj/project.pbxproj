@@ -109,6 +109,7 @@
 		43E4DDB0247CA2B300E7F4A6 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E4DDAF247CA2B300E7F4A6 /* LoginPresenterTests.swift */; };
 		43E4DDB3247CA42200E7F4A6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E4DDB2247CA42200E7F4A6 /* LoginViewModel.swift */; };
 		43E4DDB5247CA4CB00E7F4A6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E4DDB4247CA4CB00E7F4A6 /* LoginPresenter.swift */; };
+		43E4DDB7247CA9E600E7F4A6 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E4DDB6247CA9E600E7F4A6 /* AuthenticationSpy.swift */; };
 		43E81C6E24775B2C00ED5202 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E81C6D24775B2C00ED5202 /* EmailValidator.swift */; };
 		43F29F1A247090DC0046C402 /* SignPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F29F19247090DC0046C402 /* SignPresenter.swift */; };
 		43F29F22247091C80046C402 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F29F21247091C80046C402 /* AlertView.swift */; };
@@ -418,6 +419,7 @@
 		43E4DDAF247CA2B300E7F4A6 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		43E4DDB2247CA42200E7F4A6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		43E4DDB4247CA4CB00E7F4A6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		43E4DDB6247CA9E600E7F4A6 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
 		43E81C6D24775B2C00ED5202 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		43F29F19247090DC0046C402 /* SignPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPresenter.swift; sourceTree = "<group>"; };
 		43F29F21247091C80046C402 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -915,6 +917,7 @@
 			isa = PBXGroup;
 			children = (
 				43730B4724730D0700E2EE40 /* AddAccountSpy.swift */,
+				43E4DDB6247CA9E600E7F4A6 /* AuthenticationSpy.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1699,6 +1702,7 @@
 				43ACD439247109B30002ACE3 /* TestExtensions.swift in Sources */,
 				4342D1BE2477551F0019C406 /* ValidationSpy.swift in Sources */,
 				43730B4E24730E6B00E2EE40 /* TestFactories.swift in Sources */,
+				43E4DDB7247CA9E600E7F4A6 /* AuthenticationSpy.swift in Sources */,
 				439E7D0324707A4A00B73B3D /* SignPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

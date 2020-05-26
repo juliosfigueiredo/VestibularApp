@@ -11,16 +11,20 @@ import Domain
 
 public final class LoginPresenter {
     private let validation: Validation
+    private let authentication: Authentication
     private let alertView: AlertView
     
-    public init(validation: Validation, alertView: AlertView) {
+    public init(validation: Validation, authentication: Authentication, alertView: AlertView) {
         self.validation = validation
+        self.authentication = authentication
         self.alertView = alertView
     }
     
     public func login(viewModel: LoginViewModel) {
         if let message = validation.validate(data: viewModel.toJson()) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
+        } else {
+            authentication.auth(authenticationModel: viewModel.toAuthenticationModel()) { _ in }
         }
     }
 }

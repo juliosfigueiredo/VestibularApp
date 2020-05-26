@@ -8,23 +8,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+class LoginViewController: UIViewController, Storyboarded {
+    @IBOutlet weak var loading: UIActivityIndicatorView!
+    @IBOutlet weak var vwLoading: UIView!
+    @IBOutlet weak var tfCpf: UITextField!
+    @IBOutlet weak var tfSenha: UITextField!
+    @IBOutlet weak var btEntrar: UIButton!
+    @IBOutlet weak var btCadastrar: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configure()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configure() {
+        btEntrar.layer.cornerRadius = 5
+        btCadastrar.layer.cornerRadius = 5
+        hideKeyboardOnTap()
     }
-    */
-
 }

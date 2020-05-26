@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ilZ-nb-T3x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ilZ-nb-T3x">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -121,6 +121,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qDx-VD-wI4"/>
                     </view>
+                    <connections>
+                        <outlet property="btCadastrar" destination="r5s-hO-2QY" id="j8V-OL-6Uw"/>
+                        <outlet property="btEntrar" destination="iDM-lh-mIm" id="jCs-K7-yhX"/>
+                        <outlet property="loading" destination="lrG-ht-L9v" id="WDT-U3-uSo"/>
+                        <outlet property="tfCpf" destination="73K-ZM-DUl" id="BLC-Ef-0eC"/>
+                        <outlet property="tfSenha" destination="AXs-4V-P99" id="JdJ-Ah-j6c"/>
+                        <outlet property="vwLoading" destination="1h9-55-VWp" id="yfZ-iq-I3W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AfN-by-QJo" sceneMemberID="firstResponder"/>
             </objects>

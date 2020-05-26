@@ -39,7 +39,7 @@ class LoginPresenterTests: XCTestCase {
         XCTAssertEqual(authenticationSpy.authenticationModel, makeAuthenticationModel())
     }
     
-    func test_signUp_should_show_generic_error_message_if_addAccount_fails() {
+    func test_login_should_show_generic_error_message_if_authentication_fails() {
         let alertViewSpy = AlertViewSpy()
         let authenticationSpy = AuthenticationSpy()
         let sut = makeSut(authentication: authenticationSpy, alertView: alertViewSpy)
@@ -50,6 +50,20 @@ class LoginPresenterTests: XCTestCase {
         }
         sut.login(viewModel: makeLoginViewModel())
         authenticationSpy.completeWithError(.unexpected)
+        wait(for: [exp], timeout: 1)
+    }
+    
+    func test_login_should_show_expired_session_error_message_if_authentication_completes_with_expired_session() {
+        let alertViewSpy = AlertViewSpy()
+        let authenticationSpy = AuthenticationSpy()
+        let sut = makeSut(authentication: authenticationSpy, alertView: alertViewSpy)
+        let exp = expectation(description: "waiting")
+        alertViewSpy.observe { (viewModel) in
+            XCTAssertEqual(viewModel, AlertViewModel(title: "Erro", message: "CPF e/ou senha inválido(s)."))
+            exp.fulfill()
+        }
+        sut.login(viewModel: makeLoginViewModel())
+        authenticationSpy.completeWithError(.expiredSession)
         wait(for: [exp], timeout: 1)
     }
 }

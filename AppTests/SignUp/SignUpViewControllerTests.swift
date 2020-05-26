@@ -44,6 +44,7 @@ extension SignUpViewControllerTests {
         let sut = SignUpViewController.instantiate()
         sut.signUp = signUpSpy
         sut.loadViewIfNeeded()
+        checkMemoryLeak(for: sut)
         return sut
     }
 }

@@ -23,12 +23,23 @@ class LoginViewControllerTests: XCTestCase {
     func test_sut_implements_alertView() {
         XCTAssertNotNil(makeSut() as AlertView)
     }
+    
+    func test_loginButton_calls_login_on_tap() {
+        var loginViewModel: LoginViewModel?
+        let sut = makeSut(loginSpy: { loginViewModel = $0 })
+        sut.btEntrar?.simulateTap()
+        let cpf = sut.tfCpf?.text
+        let password = sut.tfSenha?.text
+        XCTAssertEqual(loginViewModel, LoginViewModel(cpf: cpf, password: password))
+    }
 }
 
 extension LoginViewControllerTests {
-    func makeSut() -> LoginViewController {
+    func makeSut(loginSpy: ((LoginViewModel) -> Void)? = nil) -> LoginViewController {
         let sut = LoginViewController.instantiate()
+        sut.login = loginSpy
         sut.loadViewIfNeeded()
+        checkMemoryLeak(for: sut)
         return sut
     }
 }

@@ -17,6 +17,8 @@ class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var btEntrar: UIButton!
     @IBOutlet weak var btCadastrar: UIButton!
     
+    var login: ((LoginViewModel) -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -26,7 +28,13 @@ class LoginViewController: UIViewController, Storyboarded {
     private func configure() {
         btEntrar.layer.cornerRadius = 5
         btCadastrar.layer.cornerRadius = 5
+        btEntrar?.addTarget(self, action: #selector(btEntrarTapped), for: .touchUpInside)
         hideKeyboardOnTap()
+    }
+    
+    @objc private func btEntrarTapped() {
+        let viewModel = LoginViewModel(cpf: tfCpf.text, password: tfSenha.text)
+        login?(viewModel)
     }
 }
 

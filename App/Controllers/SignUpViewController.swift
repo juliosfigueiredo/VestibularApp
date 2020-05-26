@@ -21,7 +21,7 @@ public class SignUpViewController: UIViewController, Storyboarded {
     @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var vwLoading: UIView!
 
-    var signUp: ((SignViewModel) -> Void)?
+    var signUp: ((SignUpRequest) -> Void)?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ public class SignUpViewController: UIViewController, Storyboarded {
     
     @objc private func btEntrarTapped() {
         guard let anoConclusao = tfAnoConclusao.text else {return}
-        let viewModel = SignViewModel(cpf: tfCpf.text, name: tfNome.text, dataNascimento: tfDataNascimento.text, anoConclusaoEnsinoMedio: Int64(anoConclusao), email: tfEmail.text, password: tfSenha.text, passwordConfirmation: tfConfirmarSenha.text)
+        let viewModel = SignUpRequest(cpf: tfCpf.text, name: tfNome.text, dataNascimento: tfDataNascimento.text, anoConclusaoEnsinoMedio: Int64(anoConclusao), email: tfEmail.text, password: tfSenha.text, passwordConfirmation: tfConfirmarSenha.text)
         
         signUp?(viewModel)
     }

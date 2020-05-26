@@ -9,7 +9,7 @@
 import Foundation
 import Domain
 
-public struct LoginViewModel: Model {
+public struct LoginRequest: Model {
     public var cpf: String?
     public var password: String?
     

@@ -25,17 +25,17 @@ class LoginViewControllerTests: XCTestCase {
     }
     
     func test_loginButton_calls_login_on_tap() {
-        var loginViewModel: LoginViewModel?
+        var loginViewModel: LoginRequest?
         let sut = makeSut(loginSpy: { loginViewModel = $0 })
         sut.btEntrar?.simulateTap()
         let cpf = sut.tfCpf?.text
         let password = sut.tfSenha?.text
-        XCTAssertEqual(loginViewModel, LoginViewModel(cpf: cpf, password: password))
+        XCTAssertEqual(loginViewModel, LoginRequest(cpf: cpf, password: password))
     }
 }
 
 extension LoginViewControllerTests {
-    func makeSut(loginSpy: ((LoginViewModel) -> Void)? = nil) -> LoginViewController {
+    func makeSut(loginSpy: ((LoginRequest) -> Void)? = nil) -> LoginViewController {
         let sut = LoginViewController.instantiate()
         sut.login = loginSpy
         sut.loadViewIfNeeded()

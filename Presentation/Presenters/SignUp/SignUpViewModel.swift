@@ -9,7 +9,7 @@
 import Foundation
 import Domain
 
-public struct SignViewModel: Model {
+public struct SignUpRequest: Model {
     public var cpf: String?
     public var name: String?
     public var dataNascimento: String?

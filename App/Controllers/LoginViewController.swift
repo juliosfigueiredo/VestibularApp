@@ -17,7 +17,7 @@ public class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var btEntrar: UIButton!
     @IBOutlet weak var btCadastrar: UIButton!
     
-    var login: ((LoginViewModel) -> Void)?
+    var login: ((LoginRequest) -> Void)?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ public class LoginViewController: UIViewController, Storyboarded {
     }
     
     @objc private func btEntrarTapped() {
-        let viewModel = LoginViewModel(cpf: tfCpf.text, password: tfSenha.text)
+        let viewModel = LoginRequest(cpf: tfCpf.text, password: tfSenha.text)
         login?(viewModel)
     }
 }

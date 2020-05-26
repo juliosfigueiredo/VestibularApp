@@ -13,19 +13,23 @@ public final class LoginPresenter {
     private let validation: Validation
     private let authentication: Authentication
     private let alertView: AlertView
+    private let loadingView: LoadingView
     
-    public init(validation: Validation, authentication: Authentication, alertView: AlertView) {
+    public init(validation: Validation, authentication: Authentication, alertView: AlertView, loadingView: LoadingView) {
         self.validation = validation
         self.authentication = authentication
         self.alertView = alertView
+        self.loadingView = loadingView
     }
     
     public func login(viewModel: LoginViewModel) {
         if let message = validation.validate(data: viewModel.toJson()) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: message))
         } else {
+            loadingView.display(viewModel: LoadingViewModel(isLoading: true))
             authentication.auth(authenticationModel: viewModel.toAuthenticationModel()) { [weak self] result in
                 guard let self = self else { return }
+                self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
                 switch result {
                 case .failure(let error):
                     var errorMessage: String!

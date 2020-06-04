@@ -29,12 +29,20 @@ public class LoginViewController: UIViewController, Storyboarded {
         btEntrar.layer.cornerRadius = 5
         btCadastrar.layer.cornerRadius = 5
         btEntrar?.addTarget(self, action: #selector(btEntrarTapped), for: .touchUpInside)
+        btCadastrar?.addTarget(self, action: #selector(btCadastroTapped), for: .touchUpInside)
         hideKeyboardOnTap()
     }
     
     @objc private func btEntrarTapped() {
         let viewModel = LoginRequest(cpf: tfCpf.text, password: tfSenha.text)
         login?(viewModel)
+    }
+    
+    @objc private func btCadastroTapped() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SignUpTableViewController") as! SignUpTableViewController
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
     }
 }
 

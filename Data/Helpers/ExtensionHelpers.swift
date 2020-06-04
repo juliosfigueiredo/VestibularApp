@@ -10,7 +10,8 @@ import Foundation
 
 public extension Data {
     func toModel<T: Decodable>() -> T? {
-        return try? JSONDecoder().decode(T.self, from: self)
+        let model = try? JSONDecoder().decode(T.self, from: self)
+        return model
     }
     
     func toJson() -> [String: Any]? {

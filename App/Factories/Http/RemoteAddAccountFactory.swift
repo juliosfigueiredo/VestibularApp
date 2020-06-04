@@ -10,7 +10,11 @@ import Foundation
 import Domain
 import Data
 
-func makeRemoteAddAccount(httpClient: HttpPostClient) -> AddAccount {
-    let remoteAddAccount = RemoteAddAccount(url: makeApiUrl(path: "signup"), httpClient: httpClient)
+func makeRemoteAddAccount() -> AddAccount {
+    return makeRemoteAddAccountWith(httpClient: makeAlamofireAdapter())
+}
+
+func makeRemoteAddAccountWith(httpClient: HttpPostClient) -> AddAccount {
+    let remoteAddAccount = RemoteAddAccount(url: makeApiUrl(path: "candidato/cadastrar"), httpClient: httpClient)
     return MainQueueDispatchDecorator(remoteAddAccount)
 }

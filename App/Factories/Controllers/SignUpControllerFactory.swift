@@ -12,8 +12,12 @@ import Validation
 import Domain
 import Infra
 
+public func makeSignUpController() -> SignUpViewController {
+    return makeSignUpController(addAccount: makeRemoteAddAccount())
+}
+
 public func makeSignUpController(addAccount: AddAccount) -> SignUpViewController {
-    let controller = SignUpViewController.instantiate()
+    let controller = SignUpViewController.instantiate(fullScreen: false)
     let validationComposite = ValidationComposite(validations: makeSignUpValidations())
     let presenter = SignPresenter(alertView: WeakVarProxy(controller), addAccount: addAccount, loadingView: WeakVarProxy(controller), validation: validationComposite)
     controller.signUp = presenter.signUp

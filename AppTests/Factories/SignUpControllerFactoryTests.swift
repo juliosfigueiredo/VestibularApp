@@ -41,7 +41,7 @@ class SignUpControllerFactoryTests: XCTestCase {
 }
 
 extension SignUpControllerFactoryTests {
-    func makeSut(file: StaticString = #file, line: UInt = #line) -> (sut: SignUpViewController, addAccountSpy: AddAccountSpy) {
+    func makeSut(file: StaticString = #file, line: UInt = #line) -> (sut: SignUpTableViewController, addAccountSpy: AddAccountSpy) {
         let addAccountSpy = AddAccountSpy()
         let sut = makeSignUpController(addAccount: MainQueueDispatchDecorator(addAccountSpy))
         checkMemoryLeak(for: sut, file: file, line: line)

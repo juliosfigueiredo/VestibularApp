@@ -10,18 +10,25 @@ import Foundation
 import UIKit
 
 public protocol Storyboarded {
-    static func instantiate(fullScreen: Bool) -> Self
+    static func instantiate() -> Self
 }
 
 extension Storyboarded where Self: UIViewController {
-    public static func instantiate(fullScreen: Bool) -> Self {
+    public static func instantiate() -> Self {
         let viewController = String(describing: self)
         let bundle = Bundle(for: Self.self)
         let storyBoard = UIStoryboard(name: "Main", bundle: bundle)
         let controller = storyBoard.instantiateViewController(identifier: viewController) as! Self
-        if fullScreen {
-            controller.modalPresentationStyle = .fullScreen
-        }
+        return controller
+    }
+}
+
+extension Storyboarded where Self: UITableViewController {
+    public static func instantiate() -> Self {
+        let viewController = String(describing: self)
+        let bundle = Bundle(for: Self.self)
+        let storyBoard = UIStoryboard(name: "Main", bundle: bundle)
+        let controller = storyBoard.instantiateViewController(identifier: viewController) as! Self
         return controller
     }
 }

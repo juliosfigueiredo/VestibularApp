@@ -16,7 +16,7 @@ class AddAccountIntegrationTests: XCTestCase {
         let alamofireAdapter = AlamofireAdapter()
         let url = URL(string: "http://sistemashomologacao.suafaculdade.com.br/sistemas_siap/controleprovav2/api/candidato/cadastrar")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
-        let addAccountModel = AddAccountModel(cpf: "68503228009", name: "JULIO FIGUEIREDO", dataNascimento: "14/03/2004", anoConclusaoEnsinoMedio: 2020, email: "juliosfigueiredo@gmail.com", password: "secret", passwordConfirmation: "secret")
+        let addAccountModel = AddAccountModel(cpf: "68503228000", name: "JULIO FIGUEIREDO", dataNascimento: "14/03/2004", anoConclusaoEnsinoMedio: 2020, email: "juliosfigueiredo@gmail.com", password: "secret", passwordConfirmation: "secret")
         let exp = expectation(description: "waiting")
         sut.add(addAccountModel: addAccountModel) { (result) in
             switch result {

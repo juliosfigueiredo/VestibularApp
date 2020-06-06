@@ -13,7 +13,7 @@ import Presentation
 
 class SignUpViewControllerTests: XCTestCase {
     func test_loading_is_hidden_on_start() {
-        XCTAssertEqual(makeSut().vwLoading.isHidden, true)
+        XCTAssertEqual(makeSut().loading.isAnimating, true)
     }
     
     func test_sut_implements_loadingView() {
@@ -40,8 +40,8 @@ class SignUpViewControllerTests: XCTestCase {
 }
 
 extension SignUpViewControllerTests {
-    func makeSut(signUpSpy: ((SignUpRequest) -> Void)? = nil) -> SignUpViewController {
-        let sut = SignUpViewController.instantiate()
+    func makeSut(signUpSpy: ((SignUpRequest) -> Void)? = nil) -> SignUpTableViewController {
+        let sut = SignUpTableViewController.instantiate()
         sut.signUp = signUpSpy
         sut.loadViewIfNeeded()
         checkMemoryLeak(for: sut)

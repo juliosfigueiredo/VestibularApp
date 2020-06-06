@@ -9,7 +9,7 @@
 import UIKit
 import Presentation
 
-class SignUpTableViewController: UITableViewController {
+public class SignUpTableViewController: UITableViewController, Storyboarded {
     @IBOutlet weak var tfCpf: UITextField!
     @IBOutlet weak var tfNome: UITextField!
     @IBOutlet weak var tfEmail: UITextField!
@@ -52,7 +52,7 @@ class SignUpTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 10
     }

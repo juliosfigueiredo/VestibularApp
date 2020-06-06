@@ -17,7 +17,7 @@ public func makeLoginController() -> LoginViewController {
 }
 
 public func makeLoginController(authentication: Authentication) -> LoginViewController {
-    let controller = LoginViewController.instantiate(fullScreen: false)
+    let controller = LoginViewController.instantiate()
     let validationComposite = ValidationComposite(validations: makeLoginValidations())
     let presenter = LoginPresenter(validation: validationComposite, authentication: authentication, alertView: WeakVarProxy(controller), loadingView: WeakVarProxy(controller))
     controller.login = presenter.login

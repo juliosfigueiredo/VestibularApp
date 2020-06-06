@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol AddInscription {
-    typealias Result = Swift.Result<Bool, DomainError>
+    typealias Result = Swift.Result<InscriptionModel, DomainError>
     func add(addInscriptionModel: AddInscriptionModel, completion: @escaping (Result) -> Void)
 }
 

@@ -11,6 +11,7 @@
 		4303A9AE246F35DE00BFE6AA /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303A9AD246F35DE00BFE6AA /* RemoteAddAccount.swift */; };
 		4303A9B0246F364A00BFE6AA /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4303A9AF246F364A00BFE6AA /* HttpPostClient.swift */; };
 		4309BD1524893E66003D8D32 /* InscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4309BD1424893E66003D8D32 /* InscriptionModel.swift */; };
+		4309BD17248941E9003D8D32 /* RemoteAddInscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4309BD16248941E9003D8D32 /* RemoteAddInscription.swift */; };
 		4319DEA224748EFB00108B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DEA124748EFB00108B8A /* AppDelegate.swift */; };
 		4319DEA424748EFB00108B8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DEA324748EFB00108B8A /* SceneDelegate.swift */; };
 		4319DEA924748EFB00108B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319DEA724748EFB00108B8A /* Main.storyboard */; };
@@ -18,9 +19,10 @@
 		4319DEAE24748F0100108B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4319DEAD24748F0100108B8A /* Assets.xcassets */; };
 		4319DEB124748F0100108B8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319DEAF24748F0100108B8A /* LaunchScreen.storyboard */; };
 		4319DEC724748F0200108B8A /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DEC624748F0200108B8A /* AppUITests.swift */; };
-		4319DED42474992900108B8A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319DED32474992900108B8A /* SignUpViewController.swift */; };
 		4319DED824749A2800108B8A /* MyriadProCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319DED624749A2800108B8A /* MyriadProCond.ttf */; };
 		4319DED924749A2800108B8A /* Artbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319DED724749A2800108B8A /* Artbrush.ttf */; };
+		4320364724898B7C002EFD89 /* InscriptionModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320364624898B7B002EFD89 /* InscriptionModelFactory.swift */; };
+		4320364924898D04002EFD89 /* RemoteAddInscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320364824898D04002EFD89 /* RemoteAddInscriptionTests.swift */; };
 		43214A9B247D956900307387 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43214A9A247D956900307387 /* LoginViewControllerTests.swift */; };
 		43214A9D247D9DA800307387 /* LoginControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43214A9C247D9DA800307387 /* LoginControllerFactoryTests.swift */; };
 		43214A9F247D9F2B00307387 /* RemoteAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43214A9E247D9F2B00307387 /* RemoteAuthenticationFactory.swift */; };
@@ -335,6 +337,7 @@
 		4303A9AD246F35DE00BFE6AA /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
 		4303A9AF246F364A00BFE6AA /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		4309BD1424893E66003D8D32 /* InscriptionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscriptionModel.swift; sourceTree = "<group>"; };
+		4309BD16248941E9003D8D32 /* RemoteAddInscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAddInscription.swift; sourceTree = "<group>"; };
 		4319DE9F24748EFB00108B8A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4319DEA124748EFB00108B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4319DEA324748EFB00108B8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -348,9 +351,10 @@
 		4319DEC224748F0200108B8A /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4319DEC624748F0200108B8A /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		4319DEC824748F0200108B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4319DED32474992900108B8A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4319DED624749A2800108B8A /* MyriadProCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyriadProCond.ttf; sourceTree = "<group>"; };
 		4319DED724749A2800108B8A /* Artbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Artbrush.ttf; sourceTree = "<group>"; };
+		4320364624898B7B002EFD89 /* InscriptionModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionModelFactory.swift; sourceTree = "<group>"; };
+		4320364824898D04002EFD89 /* RemoteAddInscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddInscriptionTests.swift; sourceTree = "<group>"; };
 		43214A9A247D956900307387 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		43214A9C247D9DA800307387 /* LoginControllerFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactoryTests.swift; sourceTree = "<group>"; };
 		43214A9E247D9F2B00307387 /* RemoteAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationFactory.swift; sourceTree = "<group>"; };
@@ -575,6 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				4303A9AD246F35DE00BFE6AA /* RemoteAddAccount.swift */,
+				4309BD16248941E9003D8D32 /* RemoteAddInscription.swift */,
 				43E4DDAC247C825000E7F4A6 /* RemoteAuthentication.swift */,
 			);
 			path = UseCases;
@@ -594,6 +599,7 @@
 			children = (
 				43D01128246F206B00D9B903 /* RemoteAddAccountTests.swift */,
 				43E4DDAA247C6F1200E7F4A6 /* RemoteAuthenticationTests.swift */,
+				4320364824898D04002EFD89 /* RemoteAddInscriptionTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -643,7 +649,6 @@
 		4319DED22474990A00108B8A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4319DED32474992900108B8A /* SignUpViewController.swift */,
 				43616A5624757541007C3635 /* LoginViewController.swift */,
 				432497462481B825004343CA /* SignUpTableViewController.swift */,
 			);
@@ -846,6 +851,7 @@
 				43562924246F6E5E00C28608 /* TestExtensions.swift */,
 				43562926246F6EDA00C28608 /* TestFactories.swift */,
 				4356292B246F6F8200C28608 /* AccountModelFactory.swift */,
+				4320364624898B7B002EFD89 /* InscriptionModelFactory.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1624,7 +1630,6 @@
 				43A95874247A328500094B46 /* ApiUrlFactory.swift in Sources */,
 				4319DEA224748EFB00108B8A /* AppDelegate.swift in Sources */,
 				43A9587B247A36CC00094B46 /* EmailValidatorAdapterFactory.swift in Sources */,
-				4319DED42474992900108B8A /* SignUpViewController.swift in Sources */,
 				43214AA1247D9FC900307387 /* LoginControllerFactory.swift in Sources */,
 				432497472481B825004343CA /* SignUpTableViewController.swift in Sources */,
 				43616A5724757541007C3635 /* LoginViewController.swift in Sources */,
@@ -1771,6 +1776,7 @@
 			files = (
 				4303A9B0246F364A00BFE6AA /* HttpPostClient.swift in Sources */,
 				43562922246F646300C28608 /* ExtensionHelpers.swift in Sources */,
+				4309BD17248941E9003D8D32 /* RemoteAddInscription.swift in Sources */,
 				4340F9D4246F418E0005CCBB /* HttpError.swift in Sources */,
 				43E4DDAD247C825000E7F4A6 /* RemoteAuthentication.swift in Sources */,
 				4303A9AE246F35DE00BFE6AA /* RemoteAddAccount.swift in Sources */,
@@ -1782,8 +1788,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43562927246F6EDA00C28608 /* TestFactories.swift in Sources */,
+				4320364724898B7C002EFD89 /* InscriptionModelFactory.swift in Sources */,
 				4356292A246F6F2100C28608 /* HttpClientSpy.swift in Sources */,
 				43D01129246F206B00D9B903 /* RemoteAddAccountTests.swift in Sources */,
+				4320364924898D04002EFD89 /* RemoteAddInscriptionTests.swift in Sources */,
 				4356292C246F6F8200C28608 /* AccountModelFactory.swift in Sources */,
 				43562925246F6E5E00C28608 /* TestExtensions.swift in Sources */,
 				43E4DDAB247C6F1200E7F4A6 /* RemoteAuthenticationTests.swift in Sources */,

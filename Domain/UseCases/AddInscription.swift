@@ -16,12 +16,12 @@ public protocol AddInscription {
 public struct AddInscriptionModel: Model {
     public var instituto: String
     public var cpf: String
-    public var idCampus: Int
-    public var idCurso: Int
+    public var idCampus: Int64
+    public var idCurso: Int64
     public var idTurno: Int
     public var redacao: String
     
-    public init(instituto: String, cpf: String, idCampus: Int, idCurso: Int, idTurno: Int, redacao: String) {
+    public init(instituto: String, cpf: String, idCampus: Int64, idCurso: Int64, idTurno: Int, redacao: String) {
         self.instituto = instituto
         self.cpf = cpf
         self.idCampus = idCampus

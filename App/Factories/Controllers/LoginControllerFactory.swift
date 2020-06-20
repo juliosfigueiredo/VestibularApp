@@ -25,8 +25,6 @@ public func makeLoginController(authentication: Authentication) -> LoginViewCont
 }
 
 public func makeLoginValidations() -> [Validation] {
-    return [
-        RequiredFieldValidation(fieldName: "cpf", fieldLabel: "CPF"),
-        RequiredFieldValidation(fieldName: "password", fieldLabel: "Senha"),
-    ]
+    return ValidationBuilder.field("cpf").label("CPF").required().build() +
+           ValidationBuilder.field("password").label("Senha").required().build()
 }

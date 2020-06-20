@@ -109,7 +109,3 @@ extension LoginPresenterTests {
         return sut
     }
 }
-
-//alertView: alertView, addAccount: addAccount, loadingView: loadingView,
-
-//alertView: AlertViewSpy = AlertViewSpy(), addAccount: AddAccountSpy = AddAccountSpy(), loadingView: LoadingViewSpy = LoadingViewSpy(),

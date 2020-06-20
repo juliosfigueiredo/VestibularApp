@@ -16,3 +16,7 @@ func makeSignUpViewModel(cpf: String? = "any_cpf", name: String? = "any_name", d
 func makeLoginViewModel(cpf: String? = "any_cpf", password: String? = "any_password") -> LoginRequest {
     return LoginRequest(cpf: cpf, password: password)
 }
+
+func makeInscriptionViewModel(instituto: String? = "any_instituto", cpf: String? = "any_cpf", idCampus: Int64? = 0, idCurso: Int64? = 0, idTurno: Int? = 0, redacao: String? = "any_redacao") -> InscriptionRequest {
+    return InscriptionRequest(instituto: instituto, cpf: cpf, idCampus: idCampus, idCurso: idCurso, idTurno: idTurno, redacao: redacao)
+}

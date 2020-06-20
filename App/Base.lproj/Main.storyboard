@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item 2-->
+        <!--Notificações-->
         <scene sceneID="6wR-bK-OLH">
             <objects>
                 <viewController id="jeT-ve-iFt" sceneMemberID="viewController">
@@ -26,23 +26,132 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OhX-ge-u2X"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="LEH-Pg-x82"/>
+                    <tabBarItem key="tabBarItem" title="Notificações" image="notification" id="LEH-Pg-x82"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KuQ-bo-Dvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2106" y="658"/>
         </scene>
-        <!--teste-->
+        <!--Inscrições-->
         <scene sceneID="cxp-vC-xEf">
             <objects>
-                <viewController id="YZl-Ff-cgD" sceneMemberID="viewController">
+                <viewController id="YZl-Ff-cgD" customClass="InscriptionViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="483-pX-1GJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-cm-5tj">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" name="Fundo"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="143" id="wPY-Mb-dow" customClass="InscricaoTableViewCell" customModule="App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="143"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wPY-Mb-dow" id="PVN-qe-g9T">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPe-uQ-FCs">
+                                                    <rect key="frame" x="15" y="11" width="345" height="121"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6j9-BQ-J4G">
+                                                            <rect key="frame" x="0.0" y="0.0" width="13" height="121"/>
+                                                            <color key="backgroundColor" name="Verde"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="13" id="E63-as-IcD"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processo Seletivo 2020 2 Semestre - Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMy-3b-lTk">
+                                                            <rect key="frame" x="21" y="8.0000000000000018" width="295.33333333333331" height="17.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="15"/>
+                                                            <color key="textColor" name="Azul-claro"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5412714" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9H-El-qwz">
+                                                            <rect key="frame" x="243.33333333333329" y="8" width="93.666666666666657" height="28"/>
+                                                            <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="24"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Aguardando correção" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmX-cj-wM6">
+                                                            <rect key="frame" x="239.33333333333337" y="95.333333333333329" width="97.666666666666629" height="17.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="15"/>
+                                                            <color key="textColor" name="Azul"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="17/06/2020 17:16:21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce4-7Z-I0Z">
+                                                            <rect key="frame" x="21" y="95.333333333333329" width="97.666666666666686" height="17.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="MyriadPro-Cond" family="Myriad Pro" pointSize="15"/>
+                                                            <color key="textColor" name="Azul-claro"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicina Veterinária" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ7-F8-pD9">
+                                                            <rect key="frame" x="21" y="41" width="316" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diurno - Indianópolis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvz-f8-oMc">
+                                                            <rect key="frame" x="21" y="67" width="316" height="14.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="DmX-cj-wM6" firstAttribute="leading" secondItem="ce4-7Z-I0Z" secondAttribute="trailing" priority="750" constant="120.66666666666666" id="075-Rd-zml"/>
+                                                        <constraint firstAttribute="bottom" secondItem="DmX-cj-wM6" secondAttribute="bottom" constant="8" id="2bN-nr-RZe"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ce4-7Z-I0Z" secondAttribute="bottom" constant="8" id="47m-uk-mah"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Xvz-f8-oMc" secondAttribute="trailing" constant="8" id="69o-xc-hsN"/>
+                                                        <constraint firstItem="6j9-BQ-J4G" firstAttribute="leading" secondItem="qPe-uQ-FCs" secondAttribute="leading" id="A60-8H-nDr"/>
+                                                        <constraint firstItem="Xvz-f8-oMc" firstAttribute="top" secondItem="gQ7-F8-pD9" secondAttribute="bottom" constant="5" id="ATp-bK-JiL"/>
+                                                        <constraint firstItem="gQ7-F8-pD9" firstAttribute="leading" secondItem="6j9-BQ-J4G" secondAttribute="trailing" constant="8" id="JPX-kl-vaO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Y9H-El-qwz" secondAttribute="trailing" constant="8" id="Kfx-8B-zGX"/>
+                                                        <constraint firstItem="Xvz-f8-oMc" firstAttribute="leading" secondItem="6j9-BQ-J4G" secondAttribute="trailing" constant="8" id="Mu8-Kr-hek"/>
+                                                        <constraint firstItem="Y9H-El-qwz" firstAttribute="leading" secondItem="xMy-3b-lTk" secondAttribute="trailing" priority="250" constant="54.666666666666657" id="OJx-TP-O3l"/>
+                                                        <constraint firstItem="xMy-3b-lTk" firstAttribute="leading" secondItem="6j9-BQ-J4G" secondAttribute="trailing" constant="8" id="Qrg-Oo-079"/>
+                                                        <constraint firstItem="Y9H-El-qwz" firstAttribute="top" secondItem="qPe-uQ-FCs" secondAttribute="top" constant="8" id="YYs-nb-Ycq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gQ7-F8-pD9" secondAttribute="trailing" constant="8" id="Yhu-Bb-hI8"/>
+                                                        <constraint firstItem="gQ7-F8-pD9" firstAttribute="top" secondItem="Y9H-El-qwz" secondAttribute="bottom" constant="5" id="Yjf-N6-vzc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="6j9-BQ-J4G" secondAttribute="bottom" id="ZDS-9C-Icp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DmX-cj-wM6" secondAttribute="trailing" constant="8" id="aLM-tw-Jcf"/>
+                                                        <constraint firstItem="6j9-BQ-J4G" firstAttribute="top" secondItem="qPe-uQ-FCs" secondAttribute="top" id="egx-Wd-ojE"/>
+                                                        <constraint firstItem="xMy-3b-lTk" firstAttribute="top" secondItem="qPe-uQ-FCs" secondAttribute="top" constant="8" id="mMX-NQ-i9U"/>
+                                                        <constraint firstItem="ce4-7Z-I0Z" firstAttribute="leading" secondItem="6j9-BQ-J4G" secondAttribute="trailing" constant="8" id="zq0-Jx-ieI"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qPe-uQ-FCs" firstAttribute="bottom" secondItem="PVN-qe-g9T" secondAttribute="bottomMargin" id="1Ge-Ar-aMl"/>
+                                                <constraint firstItem="qPe-uQ-FCs" firstAttribute="trailing" secondItem="PVN-qe-g9T" secondAttribute="trailingMargin" id="Csz-bD-Oje"/>
+                                                <constraint firstItem="qPe-uQ-FCs" firstAttribute="leading" secondItem="PVN-qe-g9T" secondAttribute="leadingMargin" id="ag3-Z7-hE4"/>
+                                                <constraint firstItem="qPe-uQ-FCs" firstAttribute="top" secondItem="PVN-qe-g9T" secondAttribute="topMargin" id="lmF-gH-SMh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="Fundo"/>
+                                        <connections>
+                                            <outlet property="lbCampus" destination="Xvz-f8-oMc" id="ukn-dq-nLr"/>
+                                            <outlet property="lbCurso" destination="gQ7-F8-pD9" id="DEd-Bh-9Ug"/>
+                                            <outlet property="lbData" destination="ce4-7Z-I0Z" id="c1k-yU-6Sa"/>
+                                            <outlet property="lbDescricao" destination="xMy-3b-lTk" id="MLM-lN-g81"/>
+                                            <outlet property="lbNumero" destination="Y9H-El-qwz" id="HdU-IY-8xY"/>
+                                            <outlet property="lbStatus" destination="DmX-cj-wM6" id="pqP-cV-cdQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t3b-pd-cnj" firstAttribute="bottom" secondItem="8g9-cm-5tj" secondAttribute="bottom" id="0H8-3T-kqm"/>
+                            <constraint firstItem="8g9-cm-5tj" firstAttribute="top" secondItem="t3b-pd-cnj" secondAttribute="top" id="BXq-WZ-ubG"/>
+                            <constraint firstItem="t3b-pd-cnj" firstAttribute="trailing" secondItem="8g9-cm-5tj" secondAttribute="trailing" id="PZ0-H2-LbL"/>
+                            <constraint firstItem="8g9-cm-5tj" firstAttribute="leading" secondItem="t3b-pd-cnj" secondAttribute="leading" id="fPX-Jg-Uz6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="t3b-pd-cnj"/>
                     </view>
-                    <navigationItem key="navigationItem" title="teste" id="LAy-cz-qx2">
+                    <navigationItem key="navigationItem" title="Inscrições" id="LAy-cz-qx2">
                         <barButtonItem key="backBarButtonItem" title=" " id="Qfv-Gw-jCE"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="c0V-o1-FxL">
                             <connections>
@@ -50,10 +159,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tbInscription" destination="8g9-cm-5tj" id="TA5-Os-UfF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3b-zX-16x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-518" y="-78"/>
+            <point key="canvasLocation" x="-519.20000000000005" y="-78.325123152709367"/>
         </scene>
         <!--Campus-->
         <scene sceneID="aBq-L0-k2N">
@@ -603,14 +715,14 @@
             </objects>
             <point key="canvasLocation" x="1839.2" y="93.842364532019715"/>
         </scene>
-        <!--Item 1-->
+        <!--Inscrições-->
         <scene sceneID="LX4-fI-par">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nli-Vn-YDu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="4vp-BK-dUJ"/>
+                    <tabBarItem key="tabBarItem" title="Inscrições" image="papel" id="4vp-BK-dUJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Syj-Sd-iJi">
-                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="104.33333333333334"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -644,17 +756,28 @@
     <resources>
         <image name="close-white" width="25" height="25"/>
         <image name="logotipo" width="100" height="31.333333969116211"/>
+        <image name="notification" width="25" height="25"/>
+        <image name="papel" width="25" height="25"/>
         <namedColor name="Amarelo">
             <color red="1" green="0.94901960784313721" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Azul">
             <color red="0.14901960784313725" green="0.22745098039215686" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Azul-claro">
+            <color red="0.41176470588235292" green="0.57647058823529407" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Botao">
             <color red="0.17647058823529413" green="0.54117647058823526" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="Fundo">
+            <color red="0.94509803921568625" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Primaria">
             <color red="0.14901960784313725" green="0.22745098039215686" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Verde">
+            <color red="0.17647058823529413" green="0.54117647058823526" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

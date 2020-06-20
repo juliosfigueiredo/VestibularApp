@@ -10,7 +10,7 @@ import Foundation
 import Domain
 
 func makeAddInscriptionModel() -> AddInscriptionModel {
-    return AddInscriptionModel(instituto: "any_instituto", cpf: "any_cpf", idCampus: 1, idCurso: 1, idTurno: 1, redacao: "any_redacao")
+    return AddInscriptionModel(instituto: "any_instituto", cpf: "any_cpf", idCampus: 0, idCurso: 0, idTurno: 0, redacao: "any_redacao")
 }
 
 func makeInscriptionModel() -> InscriptionModel {

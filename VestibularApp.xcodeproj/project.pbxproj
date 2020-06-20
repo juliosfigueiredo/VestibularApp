@@ -84,6 +84,7 @@
 		43616A5F2475DFC3007C3635 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 439E7CF524707A4A00B73B3D /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43616A622475E432007C3635 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43616A612475E432007C3635 /* Storyboarded.swift */; };
 		43616A712475F1D4007C3635 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43616A682475F1D4007C3635 /* Validation.framework */; };
+		4371BBA5249D3FE300EB7EA8 /* ValidationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371BBA4249D3FE300EB7EA8 /* ValidationBuilder.swift */; };
 		43730B3C2473096F00E2EE40 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B3B2473096F00E2EE40 /* SignUpRequest.swift */; };
 		43730B4224730C8000E2EE40 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4124730C8000E2EE40 /* AlertViewSpy.swift */; };
 		43730B4824730D0700E2EE40 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4724730D0700E2EE40 /* AddAccountSpy.swift */; };
@@ -91,6 +92,12 @@
 		43730B4E24730E6B00E2EE40 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43730B4D24730E6B00E2EE40 /* TestFactories.swift */; };
 		43751C6124798CFD00F18D6D /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43394D0924781A92000D1132 /* EmailValidatorSpy.swift */; };
 		438C03A4248BE4F100F3D7A6 /* InscriptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C03A3248BE4F100F3D7A6 /* InscriptionRequest.swift */; };
+		438C03A7248BE8AA00F3D7A6 /* InscriptionPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C03A6248BE8AA00F3D7A6 /* InscriptionPresenterTests.swift */; };
+		438C03A9248BE96600F3D7A6 /* AddInscriptionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C03A8248BE96600F3D7A6 /* AddInscriptionSpy.swift */; };
+		438C03AB248BFAB600F3D7A6 /* InscriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C03AA248BFAB500F3D7A6 /* InscriptionPresenter.swift */; };
+		438C03AC248C07BC00F3D7A6 /* InscriptionModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320364624898B7B002EFD89 /* InscriptionModelFactory.swift */; };
+		438C03AD248C093700F3D7A6 /* AddInscriptionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C03A8248BE96600F3D7A6 /* AddInscriptionSpy.swift */; };
+		438C03AF248C1A1100F3D7A6 /* AddInscriptionIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C03AE248C1A1100F3D7A6 /* AddInscriptionIntegrationTests.swift */; };
 		439006332475F90600B33874 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0111B246F206B00D9B903 /* Data.framework */; };
 		439006342475F90600B33874 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0111B246F206B00D9B903 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		439006372475F90600B33874 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0110A246F1D8000D9B903 /* Domain.framework */; };
@@ -108,6 +115,8 @@
 		43A9587B247A36CC00094B46 /* EmailValidatorAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9587A247A36CC00094B46 /* EmailValidatorAdapterFactory.swift */; };
 		43ACD4382470F3B10002ACE3 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4356292B246F6F8200C28608 /* AccountModelFactory.swift */; };
 		43ACD439247109B30002ACE3 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43562924246F6E5E00C28608 /* TestExtensions.swift */; };
+		43C06CDE249AE97E00639FB7 /* InscricaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C06CDD249AE97E00639FB7 /* InscricaoTableViewCell.swift */; };
+		43C06CE0249AEBD700639FB7 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C06CDF249AEBD600639FB7 /* InscriptionViewController.swift */; };
 		43D01113246F1E2300D9B903 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D01112246F1E2300D9B903 /* AddAccount.swift */; };
 		43D01115246F202A00D9B903 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D01114246F202A00D9B903 /* AccountModel.swift */; };
 		43D01124246F206B00D9B903 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D0111B246F206B00D9B903 /* Data.framework */; };
@@ -142,13 +151,6 @@
 			remoteGlobalIDString = 4319DE9E24748EFB00108B8A;
 			remoteInfo = App;
 		};
-		4323ACA1247060A3001AFAEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4328C885246F1164007C6B69 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43D0111A246F206B00D9B903;
-			remoteInfo = Data;
-		};
 		4323ACA6247060B7001AFAEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4328C885246F1164007C6B69 /* Project object */;
@@ -169,6 +171,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 43616A672475F1D4007C3635;
 			remoteInfo = Validation;
+		};
+		4346EDDE248C1B2A00ECC83C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4328C885246F1164007C6B69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D0111A246F206B00D9B903;
+			remoteInfo = Data;
 		};
 		4356293C246F73D800C28608 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -409,12 +418,17 @@
 		43616A702475F1D4007C3635 /* ValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43616A752475F1D4007C3635 /* EmailValidatorAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapterTests.swift; sourceTree = "<group>"; };
 		43616A772475F1D4007C3635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4371BBA4249D3FE300EB7EA8 /* ValidationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationBuilder.swift; sourceTree = "<group>"; };
 		43730B3B2473096F00E2EE40 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		43730B4124730C8000E2EE40 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
 		43730B4724730D0700E2EE40 /* AddAccountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountSpy.swift; sourceTree = "<group>"; };
 		43730B4924730D8800E2EE40 /* LoadingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewSpy.swift; sourceTree = "<group>"; };
 		43730B4D24730E6B00E2EE40 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		438C03A3248BE4F100F3D7A6 /* InscriptionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionRequest.swift; sourceTree = "<group>"; };
+		438C03A6248BE8AA00F3D7A6 /* InscriptionPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPresenterTests.swift; sourceTree = "<group>"; };
+		438C03A8248BE96600F3D7A6 /* AddInscriptionSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInscriptionSpy.swift; sourceTree = "<group>"; };
+		438C03AA248BFAB500F3D7A6 /* InscriptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPresenter.swift; sourceTree = "<group>"; };
+		438C03AE248C1A1100F3D7A6 /* AddInscriptionIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInscriptionIntegrationTests.swift; sourceTree = "<group>"; };
 		439006312475F72C00B33874 /* EmailValidatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapter.swift; sourceTree = "<group>"; };
 		43974687247748F200051D52 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		439E7CF524707A4A00B73B3D /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,6 +439,8 @@
 		43A95873247A328500094B46 /* ApiUrlFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUrlFactory.swift; sourceTree = "<group>"; };
 		43A95876247A341900094B46 /* AlamofireAdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterFactory.swift; sourceTree = "<group>"; };
 		43A9587A247A36CC00094B46 /* EmailValidatorAdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapterFactory.swift; sourceTree = "<group>"; };
+		43C06CDD249AE97E00639FB7 /* InscricaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscricaoTableViewCell.swift; sourceTree = "<group>"; };
+		43C06CDF249AEBD600639FB7 /* InscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
 		43D0110A246F1D8000D9B903 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D0110D246F1D8000D9B903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43D01112246F1E2300D9B903 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -609,6 +625,8 @@
 		4319DEA024748EFB00108B8A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4371BBA3249D3FBD00EB7EA8 /* Builders */,
+				43C06CDC249AE95200639FB7 /* Views */,
 				43974686247748DF00051D52 /* Decorators */,
 				43220D0524771E7A00960714 /* Env */,
 				43220D022477189600960714 /* Proxies */,
@@ -653,6 +671,7 @@
 			children = (
 				43616A5624757541007C3635 /* LoginViewController.swift */,
 				432497462481B825004343CA /* SignUpTableViewController.swift */,
+				43C06CDF249AEBD600639FB7 /* InscriptionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -730,6 +749,7 @@
 			isa = PBXGroup;
 			children = (
 				4323AC9D247060A3001AFAEF /* AddAccountIntegrationTests.swift */,
+				438C03AE248C1A1100F3D7A6 /* AddInscriptionIntegrationTests.swift */,
 				4323AC9F247060A3001AFAEF /* Info.plist */,
 			);
 			path = UseCasesIntegrationTests;
@@ -923,6 +943,14 @@
 			path = ValidationTests;
 			sourceTree = "<group>";
 		};
+		4371BBA3249D3FBD00EB7EA8 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				4371BBA4249D3FE300EB7EA8 /* ValidationBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 		43730B3A2473094A00E2EE40 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -961,6 +989,7 @@
 			isa = PBXGroup;
 			children = (
 				43730B4724730D0700E2EE40 /* AddAccountSpy.swift */,
+				438C03A8248BE96600F3D7A6 /* AddInscriptionSpy.swift */,
 				43E4DDB6247CA9E600E7F4A6 /* AuthenticationSpy.swift */,
 			);
 			path = UseCases;
@@ -978,6 +1007,15 @@
 			isa = PBXGroup;
 			children = (
 				438C03A3248BE4F100F3D7A6 /* InscriptionRequest.swift */,
+				438C03AA248BFAB500F3D7A6 /* InscriptionPresenter.swift */,
+			);
+			path = Inscription;
+			sourceTree = "<group>";
+		};
+		438C03A5248BE87900F3D7A6 /* Inscription */ = {
+			isa = PBXGroup;
+			children = (
+				438C03A6248BE8AA00F3D7A6 /* InscriptionPresenterTests.swift */,
 			);
 			path = Inscription;
 			sourceTree = "<group>";
@@ -1060,6 +1098,14 @@
 			path = Validators;
 			sourceTree = "<group>";
 		};
+		43C06CDC249AE95200639FB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43C06CDD249AE97E00639FB7 /* InscricaoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		43D0110B246F1D8000D9B903 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -1139,6 +1185,7 @@
 		43F29F24247093300046C402 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				438C03A5248BE87900F3D7A6 /* Inscription */,
 				43E4DDAE247CA28300E7F4A6 /* Login */,
 				43730B3F24730BCC00E2EE40 /* SignUp */,
 			);
@@ -1257,9 +1304,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				43E485EA247A137900A1AE76 /* PBXTargetDependency */,
 				4323ACA7247060B7001AFAEF /* PBXTargetDependency */,
-				4323ACA2247060A3001AFAEF /* PBXTargetDependency */,
+				43E485EA247A137900A1AE76 /* PBXTargetDependency */,
+				4346EDDF248C1B2A00ECC83C /* PBXTargetDependency */,
 			);
 			name = UseCasesIntegrationTests;
 			productName = UseCasesIntegrationTests;
@@ -1651,8 +1698,11 @@
 				43231E3D2476C55500C9184B /* RemoteAddAccountFactory.swift in Sources */,
 				43220D0924771FB700960714 /* Environment.swift in Sources */,
 				43616A622475E432007C3635 /* Storyboarded.swift in Sources */,
+				43C06CDE249AE97E00639FB7 /* InscricaoTableViewCell.swift in Sources */,
+				4371BBA5249D3FE300EB7EA8 /* ValidationBuilder.swift in Sources */,
 				43220D04247718AC00960714 /* WeakVarProxy.swift in Sources */,
 				43231E402476C5D600C9184B /* SignUpControllerFactory.swift in Sources */,
+				43C06CE0249AEBD700639FB7 /* InscriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1667,6 +1717,7 @@
 				43214A9B247D956900307387 /* LoginViewControllerTests.swift in Sources */,
 				43214A9D247D9DA800307387 /* LoginControllerFactoryTests.swift in Sources */,
 				43616A5A2475CC62007C3635 /* TestUIExtensions.swift in Sources */,
+				438C03AD248C093700F3D7A6 /* AddInscriptionSpy.swift in Sources */,
 				43F609E62476D6150009F10C /* TestExtensions.swift in Sources */,
 				43214AA2247DA12D00307387 /* AuthenticationSpy.swift in Sources */,
 				43220CFF247713CB00960714 /* SignUpViewControllerTests.swift in Sources */,
@@ -1686,6 +1737,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4323AC9E247060A3001AFAEF /* AddAccountIntegrationTests.swift in Sources */,
+				438C03AF248C1A1100F3D7A6 /* AddInscriptionIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1740,6 +1792,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438C03AB248BFAB600F3D7A6 /* InscriptionPresenter.swift in Sources */,
 				43F29F1A247090DC0046C402 /* SignPresenter.swift in Sources */,
 				435A5EE32472338B008CD75D /* LoadingView.swift in Sources */,
 				43E4DDB5247CA4CB00E7F4A6 /* LoginPresenter.swift in Sources */,
@@ -1759,11 +1812,14 @@
 				43E4DDB0247CA2B300E7F4A6 /* LoginPresenterTests.swift in Sources */,
 				43730B4824730D0700E2EE40 /* AddAccountSpy.swift in Sources */,
 				43730B4224730C8000E2EE40 /* AlertViewSpy.swift in Sources */,
+				438C03A7248BE8AA00F3D7A6 /* InscriptionPresenterTests.swift in Sources */,
+				438C03A9248BE96600F3D7A6 /* AddInscriptionSpy.swift in Sources */,
 				43ACD4382470F3B10002ACE3 /* AccountModelFactory.swift in Sources */,
 				43ACD439247109B30002ACE3 /* TestExtensions.swift in Sources */,
 				4342D1BE2477551F0019C406 /* ValidationSpy.swift in Sources */,
 				43730B4E24730E6B00E2EE40 /* TestFactories.swift in Sources */,
 				43E4DDB7247CA9E600E7F4A6 /* AuthenticationSpy.swift in Sources */,
+				438C03AC248C07BC00F3D7A6 /* InscriptionModelFactory.swift in Sources */,
 				439E7D0324707A4A00B73B3D /* SignPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1823,11 +1879,6 @@
 			target = 4319DE9E24748EFB00108B8A /* App */;
 			targetProxy = 4319DEC324748F0200108B8A /* PBXContainerItemProxy */;
 		};
-		4323ACA2247060A3001AFAEF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43D0111A246F206B00D9B903 /* Data */;
-			targetProxy = 4323ACA1247060A3001AFAEF /* PBXContainerItemProxy */;
-		};
 		4323ACA7247060B7001AFAEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 43D01109246F1D8000D9B903 /* Domain */;
@@ -1842,6 +1893,11 @@
 			isa = PBXTargetDependency;
 			target = 43616A672475F1D4007C3635 /* Validation */;
 			targetProxy = 4342D1C52477562B0019C406 /* PBXContainerItemProxy */;
+		};
+		4346EDDF248C1B2A00ECC83C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43D0111A246F206B00D9B903 /* Data */;
+			targetProxy = 4346EDDE248C1B2A00ECC83C /* PBXContainerItemProxy */;
 		};
 		4356293D246F73D800C28608 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
